@@ -1,0 +1,480 @@
+country,airport,city,normalized_airport,normalized_city
+África do Sul,CPT,Cidade do Cabo,cpt,cidade do cabo
+África do Sul,JNB,Joanesburgo,jnb,joanesburgo
+Alemanha,TXL,Berlim,txl,berlim
+Alemanha,BER,Berlin,ber,berlin
+Alemanha,FRA,Frankurt,fra,frankurt
+Alemanha,HAM,Hamburgo,ham,hamburgo
+Alemanha,LEJ,Leipzig,lej,leipzig
+Alemanha,MUC,Munique,muc,munique
+Alemanha,STR,Stuttgart,str,stuttgart
+Alemanha,CGN,Colônia,cgn,colonia
+Alemanha,DUS,Düsseldorf,dus,dusseldorf
+Alemanha,FMO,Münster,fmo,munster
+Alemanha,SXF,Berlim,sxf,berlim
+Alemanha,ZWS,Stuttgart,zws,stuttgart
+Alemanha,QKL,Cologne-Bonn,qkl,cologne-bonn
+Alemanha,MHG,Mannhein,mhg,mannhein
+Alemanha,BRE,Bremen,bre,bremen
+Angola,LAD,Luanda,lad,luanda
+Antilhas Holandesas,SXM,St. Maarten,sxm,st. maarten
+Arábia Saudita,JED,Jeddah,jed,jeddah
+Argentina,BRC,Bariloche,brc,bariloche
+Argentina,AEP,Buenos Aires,aep,buenos aires
+Argentina,EZE,Buenos Aires,eze,buenos aires
+Argentina,MDZ,Mendoza,mdz,mendoza
+Argentina,ROS,Rosário,ros,rosario
+Argentina,AFA,San Rafael,afa,san rafael
+Argentina,CRD,Comodoro Rivadavia,crd,comodoro rivadavia
+Argentina,UAQ,San Juan,uaq,san juan
+Argentina,COR,Córdoba,cor,cordoba
+Argentina,USH,Ushuaia,ush,ushuaia
+Austrália,MEL,Melbourne,mel,melbourne
+Austrália,PER,Perth,per,perth
+Austrália,SYD,Sydney,syd,sydney
+Austrália,CNS,Cairns,cns,cairns
+Austrália,BNE,Brisbane,bne,brisbane
+Áustria,GRZ,Graz,grz,graz
+Áustria,SZG,Salzburg,szg,salzburg
+Áustria,VIE,Vienna,vie,vienna
+Bahamas,NAS,Nassau,nas,nassau
+Bélgica,BRU,Bruxelas,bru,bruxelas
+Belgrado,BEG,Sérvia,beg,servia
+Bolívia,LPB,La Paz,lpb,la paz
+Bolívia,VVI,Santa Cruz,vvi,santa cruz
+Bolívia,CBB,Cochabamba,cbb,cochabamba
+Brasil,AFL,Alta Floresta,afl,alta floresta
+Brasil,ATM,Altamira,atm,altamira
+Brasil,AJU,Aracaju,aju,aracaju
+Brasil,ARU,Araçatuba,aru,aracatuba
+Brasil,AUX,Araguaina,aux,araguaina
+Brasil,AAX,Araxá,aax,araxa
+Brasil,BGX,Bagé,bgx,bage
+Brasil,BRA,Barreiras,bra,barreiras
+Brasil,JTC,Bauru,jtc,bauru
+Brasil,BEL,Belém,bel,belem
+Brasil,CNF,Belo Horizonte,cnf,belo horizonte
+Brasil,PLU,Belo Horizonte,plu,belo horizonte
+Brasil,BVB,Boa Vista,bvb,boa vista
+Brasil,BSB,Brasília,bsb,brasilia
+Brasil,OAL,Cacoal,oal,cacoal
+Brasil,CPV,Campina Grande,cpv,campina grande
+Brasil,VCP,Campinas,vcp,campinas
+Brasil,CPQ,Campinas,cpq,campinas
+Brasil,CGR,Campo Grande,cgr,campo grande
+Brasil,CAW,Campos,caw,campos
+Brasil,CKS,Carajás,cks,carajas
+Brasil,CAC,Cascavel,cac,cascavel
+Brasil,CXJ,Caxias do Sul,cxj,caxias do sul
+Brasil,XAP,Chapecó,xap,chapeco
+Brasil,CDJ,Conceição do Araguaia,cdj,conceicao do araguaia
+Brasil,CFO,Confresa,cfo,confresa
+Brasil,CMG,Corumbá,cmg,corumba
+Brasil,CCM,Criciuma,ccm,criciuma
+Brasil,CZS,Cruzeiro do Sul,czs,cruzeiro do sul
+Brasil,CGB,Cuiabá,cgb,cuiaba
+Brasil,CWB,Curitiba,cwb,curitiba
+Brasil,DOU,Dourados,dou,dourados
+Brasil,FLN,Florianópolis,fln,florianopolis
+Brasil,FOR,Fortaleza,for,fortaleza
+Brasil,IGU,Foz do Iguaçu,igu,foz do iguacu
+Brasil,GYN,Goiânia,gyn,goiania
+Brasil,IZA,Goiânia,iza,goiania
+Brasil,GVR,Governador Valadares,gvr,governador valadares
+Brasil,GRU,Guarulhos,gru,guarulhos
+Brasil,GRP,Gurupi,grp,gurupi
+Brasil,IOS,Ilhéus,ios,ilheus
+Brasil,IMP,Imperatriz,imp,imperatriz
+Brasil,IPN,Ipatinga,ipn,ipatinga
+Brasil,JPR,Ji-Paraná,jpr,ji-parana
+Brasil,JPA,João Pessoa,jpa,joao pessoa
+Brasil,JOI,Joinville,joi,joinville
+Brasil,JUA,Juara,jua,juara
+Brasil,JDO,Juazeiro do Norte,jdo,juazeiro do norte
+Brasil,JIA,Juina,jia,juina
+Brasil,JDF,Juiz de Fora,jdf,juiz de fora
+Brasil,LDB,Londrina,ldb,londrina
+Brasil,MCP,Macapá,mcp,macapa
+Brasil,MCZ,Maceió,mcz,maceio
+Brasil,MAO,Manaus,mao,manaus
+Brasil,MAB,Marabá,mab,maraba
+Brasil,MII,Marília,mii,marilia
+Brasil,MGF,Maringá,mgf,maringa
+Brasil,MQH,Minacu,mqh,minacu
+Brasil,MOC,Montes Claros,moc,montes claros
+Brasil,NAT,Natal,nat,natal
+Brasil,NVT,Navegantes,nvt,navegantes
+Brasil,OIA,Ourilândia,oia,ourilandia
+Brasil,PMW,Palmas,pmw,palmas
+Brasil,PHB,Parnaíba,phb,parnaiba
+Brasil,PFB,Passo Fundo,pfb,passo fundo
+Brasil,POJ,Patos de Minas,poj,patos de minas
+Brasil,PET,Pelotas,pet,pelotas
+Brasil,PNZ,Petrolina,pnz,petrolina
+Brasil,PMG,Ponta Porã,pmg,ponta pora
+Brasil,POA,Porto Alegre,poa,porto alegre
+Brasil,BPS,Porto Seguro,bps,porto seguro
+Brasil,PVH,Porto Velho,pvh,porto velho
+Brasil,PPB,Presidente Prudente,ppb,presidente prudente
+Brasil,REC,Recife,rec,recife
+Brasil,RDC,Redenção,rdc,redencao
+Brasil,RAO,Ribeirão Preto,rao,ribeirao preto
+Brasil,RBR,Rio Branco,rbr,rio branco
+Brasil,GIG,Rio de Janeiro,gig,rio de janeiro
+Brasil,SDU,Rio de Janeiro,sdu,rio de janeiro
+Brasil,RVD,Rio Verde,rvd,rio verde
+Brasil,ROO,Rondonópolis,roo,rondonopolis
+Brasil,SSA,Salvador,ssa,salvador
+Brasil,STM,Santarém,stm,santarem
+Brasil,SXO,São Félix do Araguaia,sxo,sao felix do araguaia
+Brasil,SJP,São José do Rio Preto,sjp,sao jose do rio preto
+Brasil,SLZ,São Luís,slz,sao luis
+Brasil,CGH,São Paulo,cgh,sao paulo
+Brasil,OPS,Sinop,ops,sinop
+Brasil,THE,Teresina,the,teresina
+Brasil,UBA,Uberaba,uba,uberaba
+Brasil,UDI,Uberlândia,udi,uberlandia
+Brasil,URG,Uruguaiana,urg,uruguaiana
+Brasil,VAG,Varginha,vag,varginha
+Brasil,BVH,Vilhena,bvh,vilhena
+Brasil,VIX,Vitória,vix,vitoria
+Brasil,VDC,Vitória da Conquista,vdc,vitoria da conquista
+Brasil,TBT,Tabatinga,tbt,tabatinga
+Brasil,SJK,São José dos Campos,sjk,sao jose dos campos
+Brasil,CLV,Caldas Novas,clv,caldas novas
+Brasil,FEN,Fernando de Noronha,fen,fernando de noronha
+Brasil,PIN,Parintins,pin,parintins
+Brasil,BYO,Bonito,byo,bonito
+Brasil,SAO,São Paulo,sao,sao paulo
+Brasil,RIA,Santa Maria,ria,santa maria
+Brasil,MEA,Macaé,mea,macae
+Brasil,LEC,Lençóis,lec,lencois
+Brasil,ITB,Itaituba,itb,itaituba
+Brasil,DIQ,Divinópolis,diq,divinopolis
+Brasil,TJL,Três Lagoas,tjl,tres lagoas
+Brasil,TFF,Tefé,tff,tefe
+Brasil,JJG,Jaguaruna,jjg,jaguaruna
+Brasil,BPG,Barra dos Garças,bpg,barra dos garcas
+Brasil,LAJ,Lages,laj,lages
+Brasil,SRA,Santa Rosa,sra,santa rosa
+Brasil,FEC,Feira de Santana,fec,feira de santana
+Brasil,CIZ,Coari,ciz,coari
+Brasil,CAF,Caruari,caf,caruari
+Brasil,PGZ,Ponta Grossa,pgz,ponta grossa
+Brasil,JJD,Jericoacoara,jjd,jericoacoara
+Brasil,EEA,Correia Pinto,eea,correia pinto
+Brasil,GEL,Santo Ângelo,gel,santo angelo
+Brasil,RRJ,Rio de Janeiro,rrj,rio de janeiro
+Brasil,MVF,Mossoró,mvf,mossoro
+Brasil,OTP,Bucharest,otp,bucharest
+Brasil,LNZ,Linz,lnz,linz
+Brasil,BSS,Balsas,bss,balsas
+Bulgária,SOF,Sofia,sof,sofia
+Cabo Verde,RAI,Praia,rai,praia
+Canadá,YXU,London,yxu,london
+Canadá,YUL,Montreal,yul,montreal
+Canadá,YOW,Ottawa,yow,ottawa
+Canadá,YQB,Quebéc,yqb,quebec
+Canadá,YVR,Richmond,yvr,richmond
+Canadá,YYZ,Toronto,yyz,toronto
+Canadá,YEG,Edmonton,yeg,edmonton
+Canadá,YYC,Calgary,yyc,calgary
+Canadá,YHZ,Halifax,yhz,halifax
+Canadá,YTS,Timmins,yts,timmins
+Canadá,YYJ,Victoria,yyj,victoria
+Catar,DOH,Doha,doh,doha
+Chile,ARI,Arica,ari,arica
+Chile,SCL,Santiago,scl,santiago
+Chile,ANF,Antofagasta,anf,antofagasta
+Chile,CJC,Calama,cjc,calama
+Chile,CPO,Deserto de Atacama,cpo,deserto de atacama
+Chile,LSC,La Serena,lsc,la serena
+China,CAN,Guangzhou,can,guangzhou
+China,HKG,Hong Kong,hkg,hong kong
+China,PEK,Pequim,pek,pequim
+China,SHA,Shanghai,sha,shanghai
+China,PVG,Xangai,pvg,xangai
+China,XMN,Xiamen,xmn,xiamen
+China,CHG,Chaoyang,chg,chaoyang
+China,JJN,Quanzhou,jjn,quanzhou
+China,TAO,Qingdao,tao,qingdao
+China,SZX,Shenzen,szx,shenzen
+Chipre,ECN,Nicosia,ecn,nicosia
+Colômbia,BOG,Bogotá,bog,bogota
+Colômbia,CUI,Currillo,cui,currillo
+Colômbia,MDE,Medelin,mde,medelin
+Colômbia,EOH,Medellín,eoh,medellin
+Colômbia,CLO,Cali,clo,cali
+Colômbia,CTG,Cartagena,ctg,cartagena
+Colômbia,PPN,Popayan,ppn,popayan
+Coréia do Sul,ICN,Seul,icn,seul
+Costa Rica,SJO,San Jose,sjo,san jose
+Croácia,DBV,Dubrovnik,dbv,dubrovnik
+Croácia,ZAG,Zagreb,zag,zagreb
+Cuba,HAV,Havana,hav,havana
+Dinamarca,CPH,Copenhagen,cph,copenhagen
+Dinamarca,AAR,Aarhus,aar,aarhus
+Dinamarca,AAL,Alborg,aal,alborg
+Egito,CAI,Cairo,cai,cairo
+Egito,SSH,Sharm El Sheikh,ssh,sharm el sheikh
+Emirados Árabes Unidos,DXB,Dubai,dxb,dubai
+Emirados Árabes Unidos,AUH,Abu Dhabi,auh,abu dhabi
+Equador,UIO,Quito,uio,quito
+Equador,GYE,Guayaquil,gye,guayaquil
+Escócia,EDI,Edimburgo,edi,edimburgo
+Eslovênia,LJU,Ljubljana,lju,ljubljana
+Espanha,BCN,Barcelona,bcn,barcelona
+Espanha,MAD,Madri,mad,madri
+Espanha,TOJ,Madri,toj,madri
+Espanha,SCQ,Santiago de Compostela,scq,santiago de compostela
+Espanha,SPO,Sevilha,spo,sevilha
+Espanha,VLC,Valência,vlc,valencia
+Espanha,SDR,Santander,sdr,santander
+Espanha,VGO,Vigo,vgo,vigo
+Estados Unidos,CAK,Akron/Canton,cak,akron/canton
+Estados Unidos,ANA,Anaheim,ana,anaheim
+Estados Unidos,ATL,Atlanta,atl,atlanta
+Estados Unidos,BWI,Baltimore,bwi,baltimore
+Estados Unidos,BOS,Boston,bos,boston
+Estados Unidos,MDW,Chicago,mdw,chicago
+Estados Unidos,ORD,Chicago,ord,chicago
+Estados Unidos,CHI,Chicago,chi,chicago
+Estados Unidos,CVG,Covington,cvg,covington
+Estados Unidos,DFW,Dallas,dfw,dallas
+Estados Unidos,DAL,Dallas,dal,dallas
+Estados Unidos,DEN,Denver,den,denver
+Estados Unidos,DSM,Des Moines,dsm,des moines
+Estados Unidos,DTW,Detroit,dtw,detroit
+Estados Unidos,ELP,El Passo,elp,el passo
+Estados Unidos,GRE,Greenville,gre,greenville
+Estados Unidos,MDT,Harrisburg,mdt,harrisburg
+Estados Unidos,IAH,Houston,iah,houston
+Estados Unidos,HOU,Houston,hou,houston
+Estados Unidos,IND,Indianápolis,ind,indianapolis
+Estados Unidos,LAS,Las Vegas,las,las vegas
+Estados Unidos,LAX,Los Angeles,lax,los angeles
+Estados Unidos,MIA,Miami,mia,miami
+Estados Unidos,MTP,Montauk,mtp,montauk
+Estados Unidos,JFK,Nova Iorque,jfk,nova iorque
+Estados Unidos,LGA,Nova Iorque,lga,nova iorque
+Estados Unidos,EWR,Newark,ewr,newark
+Estados Unidos,COM,Orlando,com,orlando
+Estados Unidos,PHL,Filadélfia,phl,filadelfia
+Estados Unidos,PHX,Phoenix,phx,phoenix
+Estados Unidos,PIT,Pittsburgh,pit,pittsburgh
+Estados Unidos,PVD,Providence,pvd,providence
+Estados Unidos,SFO,São Francisco,sfo,sao francisco
+Estados Unidos,SYR,Syracuse,syr,syracuse
+Estados Unidos,TUS,Tucson,tus,tucson
+Estados Unidos,IAD,Washington,iad,washington
+Estados Unidos,DCA,"Washington, DC",dca,"washington, dc"
+Estados Unidos,AUS,Austin,aus,austin
+Estados Unidos,SDY,Sidney,sdy,sidney
+Estados Unidos,CMH,Columbus,cmh,columbus
+Estados Unidos,CAE,Columbia,cae,columbia
+Estados Unidos,CHO,Charlottesville,cho,charlottesville
+Estados Unidos,CLT,Charlotte,clt,charlotte
+Estados Unidos,MSN,Madison,msn,madison
+Estados Unidos,RDU,Raleigh-Durham,rdu,raleigh-durham
+Estados Unidos,SAN,San Diego,san,san diego
+Estados Unidos,SEA,Seattle,sea,seattle
+Estados Unidos,SMF,Sacramento,smf,sacramento
+Estados Unidos,XNA,Bentonville,xna,bentonville
+Estados Unidos,TPA,Tampa,tpa,tampa
+Estados Unidos,MCO,Orlando,mco,orlando
+Estados Unidos,LIH,Lihue,lih,lihue
+Estados Unidos,MSY,Nova Orleans,msy,nova orleans
+Estados Unidos,PDX,Portland,pdx,portland
+Estados Unidos,SCE,State College,sce,state college
+Estados Unidos,FLL,Fort Lauderdale,fll,fort lauderdale
+Estados Unidos,MRY,Monterey,mry,monterey
+Estados Unidos,MSY,Nava Orleans,msy,nava orleans
+Estados Unidos,RNO,Reno,rno,reno
+Estados Unidos,ALB,Albânia,alb,albania
+Estados Unidos,CMI,Illinois,cmi,illinois
+Estados Unidos,DAY,Ohio,day,ohio
+Estados Unidos,TYR,Texas,tyr,texas
+Estados Unidos,SAT,San Antonio,sat,san antonio
+Estados Unidos,SLC,Salt Lake City,slc,salt lake city
+Estados Unidos,SGH,Springfield,sgh,springfield
+Estados Unidos,LSE,La Crosse,lse,la crosse
+Estados Unidos,CID,Cedar Rapids,cid,cedar rapids
+Estados Unidos,FLG,Flagstaff,flg,flagstaff
+Estados Unidos,SBA,Santa Barbara,sba,santa barbara
+Estados Unidos,BDL,Windsor Locks,bdl,windsor locks
+Estados Unidos,FFL,Fairfield,ffl,fairfield
+Estados Unidos,SBN,South Bend,sbn,south bend
+Estados Unidos,STL,St. Louis,stl,st. louis
+Estados Unidos,SCH,Schenectady,sch,schenectady
+Estados Unidos,SJC,San Jose,sjc,san jose
+Estados Unidos,SNA,Santa Ana,sna,santa ana
+Estados Unidos,MSP,Minneapolis,msp,minneapolis
+Estados Unidos,TYS,Knoxville,tys,knoxville
+Estados Unidos,MPT,Montauk,mpt,montauk
+Estados Unidos,CLE,Ohio,cle,ohio
+Estados Unidos,HNL,Honolulu,hnl,honolulu
+Estados Unidos,ITH,Ithaca,ith,ithaca
+Estados Unidos,PWM,Portland,pwm,portland
+Estados Unidos,BNA,Nashville,bna,nashville
+Estados Unidos,BBB,Benson,bbb,benson
+Estados Unidos,EYW,Key West,eyw,key west
+Estados Unidos,OKC,Oklahoma City,okc,oklahoma city
+Estados Unidos,LEX,Lexington,lex,lexington
+Estados Unidos,ICT,Wichita,ict,wichita
+Estados Unidos,EAS,San Sebastian,eas,san sebastian
+Estônia,TLL,Tallinn,tll,tallinn
+Etiópia,ADD,Addis Ababa,add,addis ababa
+Filipinas,CRM,Catarman,crm,catarman
+Filipinas,MNL,Manila,mnl,manila
+Finlândia,HEL,Vantaa,hel,vantaa
+França,LYS,Lyon,lys,lyon
+França,MRS,Marselha,mrs,marselha
+França,CDG,Paris,cdg,paris
+França,SXB,Strasbourg,sxb,strasbourg
+França,ORY,Paris (Orly),ory,paris (orly)
+França,TLS,Toulouse,tls,toulouse
+França,LIL,Lille,lil,lille
+França,CFE,Clermont-Ferrand,cfe,clermont-ferrand
+França,BOD,Bordeaux,bod,bordeaux
+França,RNS,Rennes,rns,rennes
+França,NCE,Nice,nce,nice
+Granada,CRU,Lauriston,cru,lauriston
+Grécia,ATH,Atenas,ath,atenas
+Grécia,CHQ,Souda,chq,souda
+Grécia,HER,Iraklion,her,iraklion
+Grécia,SKG,Thessaloniki,skg,thessaloniki
+Guatemala,GUA,Cidade da Guatemala,gua,cidade da guatemala
+Guiné-Bissau,OXB,Bissau,oxb,bissau
+Honduras,TGU,Tegucigalpa,tgu,tegucigalpa
+Honduras,SAP,La Mesa,sap,la mesa
+Hungria,BUD,Budapeste,bud,budapeste
+Índia,BLR,Bangalore,blr,bangalore
+Índia,BOM,Bombaim,bom,bombaim
+Índia,CCU,Calcutá,ccu,calcuta
+Índia,DEL,Nova Delhi,del,nova delhi
+Índia,AMD,Sardar Vallabhbhai Patel,amd,sardar vallabhbhai patel
+Índia,LDA,Malda,lda,malda
+Indonésia,CGK,Jacarta,cgk,jacarta
+Inglaterra,LPL,Liverpool,lpl,liverpool
+Inglaterra,LYX,Londres,lyx,londres
+Inglaterra,LHR,Londres,lhr,londres
+Inglaterra,MAN,Manchester,man,manchester
+Inglaterra,BHX,Birmingham,bhx,birmingham
+Inglaterra,LCY,Londres,lcy,londres
+Inglaterra,LGW,Londres (Gatwick),lgw,londres (gatwick)
+Inglaterra,BBS,Yateley,bbs,yateley
+Irã,IKA,Tehran,ika,tehran
+Irã,THR,Tehran,thr,tehran
+Iraque,BGW,Bagda,bgw,bagda
+Iraque,EBL,Erbil,ebl,erbil
+Irlanda,DUB,Dublin,dub,dublin
+Irlanda,SNN,Shannon,snn,shannon
+Islândia,GRY,Grímsey,gry,grimsey
+Islândia,KEF,Reykjavik,kef,reykjavik
+Israel,TLV,Tel Aviv,tlv,tel aviv
+Itália,BRI,Bari,bri,bari
+Itália,BLQ,Bolonha,blq,bolonha
+Itália,FLR,Florença,flr,florenca
+Itália,LIN,Milão,lin,milao
+Itália,MXP,Milão,mxp,milao
+Itália,NAP,Nápoles,nap,napoles
+Itália,PSA,Pisa,psa,pisa
+Itália,FCO,Roma,fco,roma
+Itália,TRN,Turin,trn,turin
+Itália,VCE,Veneza,vce,veneza
+Itália,VRN,Verona,vrn,verona
+Itália,CTA,Catania,cta,catania
+Itália,PMO,Palermo,pmo,palermo
+Jamaica,KIN,Kingston,kin,kingston
+Japão,NGO,Nagoya,ngo,nagoya
+Japão,NRT,Narita,nrt,narita
+Japão,HND,Tóquio,hnd,toquio
+Japão,IHA,Niihama,iha,niihama
+Japão,CTS,Chitose,cts,chitose
+Japão,FUK,Fukuoka,fuk,fukuoka
+Japão,KIX,Osaka,kix,osaka
+Japão,KMQ,Komatsu,kmq,komatsu
+Jordânia,AMM,Amman,amm,amman
+Líbano,BEY,Beirute,bey,beirute
+Luxemburgo,LUX,Luxemburgo,lux,luxemburgo
+Malásia,KUL,Kuala Lumpur,kul,kuala lumpur
+Malta,MLA,Malta,mla,malta
+Marrocos,CAS,Casablanca,cas,casablanca
+Marrocos,CMN,Casablanca,cmn,casablanca
+Marrocos,RAK,Marrakech,rak,marrakech
+Mexico,HMO,Hermosillo,hmo,hermosillo
+México,ACA,Acapulco,aca,acapulco
+México,CUN,Cancun,cun,cancun
+México,MEX,Cidade do México,mex,cidade do mexico
+México,CJS,Cidade Juarez,cjs,cidade juarez
+México,GDL,Guadalajara,gdl,guadalajara
+México,LOM,Lagos de Moreno,lom,lagos de moreno
+México,BJX,Léon,bjx,leon
+México,MTY,Monterrey,mty,monterrey
+México,NLD,Nuevo Laredo,nld,nuevo laredo
+México,TRC,Torreon,trc,torreon
+Moçambique,MPM,Maputo,mpm,maputo
+Nicarágua,MGA,Manágua,mga,managua
+Noruega,OSL,Oslo,osl,oslo
+Noruega,SRP,Stord,srp,stord
+Noruega,ALF,Alta,alf,alta
+Noruega,BGO,Bergen,bgo,bergen
+Nova Zelândia,WLG,Wellington,wlg,wellington
+Nova Zelândia,AKL,Auckland,akl,auckland
+Nova Zelândia,DUD,Dunedin,dud,dunedin
+País de Gales,CWL,Cardiff,cwl,cardiff
+Países Baixos,AMS,Amsterdam,ams,amsterdam
+Países Baixos,RTM,Rotterdam,rtm,rotterdam
+Países Baixos,GRQ,Groningen,grq,groningen
+Panamá,PTY,Cidade do Panamá,pty,cidade do panama
+Papua New Guinea,RBP,Rabaraba,rbp,rabaraba
+Papua New Guinea,SDI,Saidor,sdi,saidor
+Papua New Guinea,GUR,Alotau,gur,alotau
+Paquistão,SDT,Saidu Sharif,sdt,saidu sharif
+Paraguai,ASU,Assunção,asu,assuncao
+Paraguai,AGT,Cidade do Leste,agt,cidade do leste
+Peru,CUZ,Cuzco,cuz,cuzco
+Peru,LIM,Lima,lim,lima
+Peru,AQP,Arequipa,aqp,arequipa
+Peru,TRU,Trujillo,tru,trujillo
+Polinésia Francesa,AAA,Anaa,aaa,anaa
+Polinésia Francesa,MAU,Maupiti,mau,maupiti
+Polônia,KRK,Cracóvia,krk,cracovia
+Polônia,WAW,Varsóvia,waw,varsovia
+Porto Rico,SJU,San Juan,sju,san juan
+Portugal,FNC,Funchal,fnc,funchal
+Portugal,LIS,Lisboa,lis,lisboa
+Portugal,OPO,Porto,opo,porto
+Quênia,KIS,Kisumu,kis,kisumu
+Quênia,NBO,Nairóbi,nbo,nairobi
+Reino Unido,LBA,Leeds Bradford,lba,leeds bradford
+Reino Unido,GLA,Glasgow,gla,glasgow
+Reino Unido,LTN,Londres,ltn,londres
+República Dominicana,SDQ,Santo Domingo,sdq,santo domingo
+República Dominicana,PUJ,Punta Cana,puj,punta cana
+República Tcheca,PRG,Praga,prg,praga
+Rússia,DME,Moscou,dme,moscou
+Rússia,MOW,Moscou,mow,moscou
+Rússia,VKO,Moscou,vko,moscou
+Rússia,LED,São Petersburgo,led,sao petersburgo
+Rússia,SVO,Moscou,svo,moscou
+Singapura,SIN,Singapura,sin,singapura
+Suécia,ARN,Estocolmo,arn,estocolmo
+Suécia,GOT,Gothenburg,got,gothenburg
+Suécia,LPI,Linkoping,lpi,linkoping
+Suíça,GVA,Genebra,gva,genebra
+Suíça,ZRH,Zurique,zrh,zurique
+Tailândia,BKK,Bangkok,bkk,bangkok
+Taiwan,TPE,Taipei,tpe,taipei
+Tunísia,TUN,Tunis,tun,tunis
+Turquia,ADA,Adana,ada,adana
+Turquia,IST,Istambul,ist,istambul
+Turquia,ESB,Ancara,esb,ancara
+Ucrania,TNL,Ternopil,tnl,ternopil
+Uruguai,PDP,Maldonado,pdp,maldonado
+Uruguai,MVD,Montevideo,mvd,montevideo
+Venezuela,CCS,Caracas,ccs,caracas
+Venezuela,LAG,La Guaira,lag,la guaira
+Venezuela,GTC,Green Turtle,gtc,green turtle
+Vietnã,HAN,Hanoi,han,hanoi
+Vietnã,HUI,Hue,hui,hue

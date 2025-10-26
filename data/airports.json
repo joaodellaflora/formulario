@@ -1,0 +1,3355 @@
+[
+  {
+    "country": "África do Sul",
+    "airport": "CPT",
+    "city": "Cidade do Cabo",
+    "normalized_airport": "cpt",
+    "normalized_city": "cidade do cabo"
+  },
+  {
+    "country": "África do Sul",
+    "airport": "JNB",
+    "city": "Joanesburgo",
+    "normalized_airport": "jnb",
+    "normalized_city": "joanesburgo"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "TXL",
+    "city": "Berlim",
+    "normalized_airport": "txl",
+    "normalized_city": "berlim"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "BER",
+    "city": "Berlin",
+    "normalized_airport": "ber",
+    "normalized_city": "berlin"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "FRA",
+    "city": "Frankurt",
+    "normalized_airport": "fra",
+    "normalized_city": "frankurt"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "HAM",
+    "city": "Hamburgo",
+    "normalized_airport": "ham",
+    "normalized_city": "hamburgo"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "LEJ",
+    "city": "Leipzig",
+    "normalized_airport": "lej",
+    "normalized_city": "leipzig"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "MUC",
+    "city": "Munique",
+    "normalized_airport": "muc",
+    "normalized_city": "munique"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "STR",
+    "city": "Stuttgart",
+    "normalized_airport": "str",
+    "normalized_city": "stuttgart"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "CGN",
+    "city": "Colônia",
+    "normalized_airport": "cgn",
+    "normalized_city": "colonia"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "DUS",
+    "city": "Düsseldorf",
+    "normalized_airport": "dus",
+    "normalized_city": "dusseldorf"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "FMO",
+    "city": "Münster",
+    "normalized_airport": "fmo",
+    "normalized_city": "munster"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "SXF",
+    "city": "Berlim",
+    "normalized_airport": "sxf",
+    "normalized_city": "berlim"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "ZWS",
+    "city": "Stuttgart",
+    "normalized_airport": "zws",
+    "normalized_city": "stuttgart"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "QKL",
+    "city": "Cologne-Bonn",
+    "normalized_airport": "qkl",
+    "normalized_city": "cologne-bonn"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "MHG",
+    "city": "Mannhein",
+    "normalized_airport": "mhg",
+    "normalized_city": "mannhein"
+  },
+  {
+    "country": "Alemanha",
+    "airport": "BRE",
+    "city": "Bremen",
+    "normalized_airport": "bre",
+    "normalized_city": "bremen"
+  },
+  {
+    "country": "Angola",
+    "airport": "LAD",
+    "city": "Luanda",
+    "normalized_airport": "lad",
+    "normalized_city": "luanda"
+  },
+  {
+    "country": "Antilhas Holandesas",
+    "airport": "SXM",
+    "city": "St. Maarten",
+    "normalized_airport": "sxm",
+    "normalized_city": "st. maarten"
+  },
+  {
+    "country": "Arábia Saudita",
+    "airport": "JED",
+    "city": "Jeddah",
+    "normalized_airport": "jed",
+    "normalized_city": "jeddah"
+  },
+  {
+    "country": "Argentina",
+    "airport": "BRC",
+    "city": "Bariloche",
+    "normalized_airport": "brc",
+    "normalized_city": "bariloche"
+  },
+  {
+    "country": "Argentina",
+    "airport": "AEP",
+    "city": "Buenos Aires",
+    "normalized_airport": "aep",
+    "normalized_city": "buenos aires"
+  },
+  {
+    "country": "Argentina",
+    "airport": "EZE",
+    "city": "Buenos Aires",
+    "normalized_airport": "eze",
+    "normalized_city": "buenos aires"
+  },
+  {
+    "country": "Argentina",
+    "airport": "MDZ",
+    "city": "Mendoza",
+    "normalized_airport": "mdz",
+    "normalized_city": "mendoza"
+  },
+  {
+    "country": "Argentina",
+    "airport": "ROS",
+    "city": "Rosário",
+    "normalized_airport": "ros",
+    "normalized_city": "rosario"
+  },
+  {
+    "country": "Argentina",
+    "airport": "AFA",
+    "city": "San Rafael",
+    "normalized_airport": "afa",
+    "normalized_city": "san rafael"
+  },
+  {
+    "country": "Argentina",
+    "airport": "CRD",
+    "city": "Comodoro Rivadavia",
+    "normalized_airport": "crd",
+    "normalized_city": "comodoro rivadavia"
+  },
+  {
+    "country": "Argentina",
+    "airport": "UAQ",
+    "city": "San Juan",
+    "normalized_airport": "uaq",
+    "normalized_city": "san juan"
+  },
+  {
+    "country": "Argentina",
+    "airport": "COR",
+    "city": "Córdoba",
+    "normalized_airport": "cor",
+    "normalized_city": "cordoba"
+  },
+  {
+    "country": "Argentina",
+    "airport": "USH",
+    "city": "Ushuaia",
+    "normalized_airport": "ush",
+    "normalized_city": "ushuaia"
+  },
+  {
+    "country": "Austrália",
+    "airport": "MEL",
+    "city": "Melbourne",
+    "normalized_airport": "mel",
+    "normalized_city": "melbourne"
+  },
+  {
+    "country": "Austrália",
+    "airport": "PER",
+    "city": "Perth",
+    "normalized_airport": "per",
+    "normalized_city": "perth"
+  },
+  {
+    "country": "Austrália",
+    "airport": "SYD",
+    "city": "Sydney",
+    "normalized_airport": "syd",
+    "normalized_city": "sydney"
+  },
+  {
+    "country": "Austrália",
+    "airport": "CNS",
+    "city": "Cairns",
+    "normalized_airport": "cns",
+    "normalized_city": "cairns"
+  },
+  {
+    "country": "Austrália",
+    "airport": "BNE",
+    "city": "Brisbane",
+    "normalized_airport": "bne",
+    "normalized_city": "brisbane"
+  },
+  {
+    "country": "Áustria",
+    "airport": "GRZ",
+    "city": "Graz",
+    "normalized_airport": "grz",
+    "normalized_city": "graz"
+  },
+  {
+    "country": "Áustria",
+    "airport": "SZG",
+    "city": "Salzburg",
+    "normalized_airport": "szg",
+    "normalized_city": "salzburg"
+  },
+  {
+    "country": "Áustria",
+    "airport": "VIE",
+    "city": "Vienna",
+    "normalized_airport": "vie",
+    "normalized_city": "vienna"
+  },
+  {
+    "country": "Bahamas",
+    "airport": "NAS",
+    "city": "Nassau",
+    "normalized_airport": "nas",
+    "normalized_city": "nassau"
+  },
+  {
+    "country": "Bélgica",
+    "airport": "BRU",
+    "city": "Bruxelas",
+    "normalized_airport": "bru",
+    "normalized_city": "bruxelas"
+  },
+  {
+    "country": "Belgrado",
+    "airport": "BEG",
+    "city": "Sérvia",
+    "normalized_airport": "beg",
+    "normalized_city": "servia"
+  },
+  {
+    "country": "Bolívia",
+    "airport": "LPB",
+    "city": "La Paz",
+    "normalized_airport": "lpb",
+    "normalized_city": "la paz"
+  },
+  {
+    "country": "Bolívia",
+    "airport": "VVI",
+    "city": "Santa Cruz",
+    "normalized_airport": "vvi",
+    "normalized_city": "santa cruz"
+  },
+  {
+    "country": "Bolívia",
+    "airport": "CBB",
+    "city": "Cochabamba",
+    "normalized_airport": "cbb",
+    "normalized_city": "cochabamba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "AFL",
+    "city": "Alta Floresta",
+    "normalized_airport": "afl",
+    "normalized_city": "alta floresta"
+  },
+  {
+    "country": "Brasil",
+    "airport": "ATM",
+    "city": "Altamira",
+    "normalized_airport": "atm",
+    "normalized_city": "altamira"
+  },
+  {
+    "country": "Brasil",
+    "airport": "AJU",
+    "city": "Aracaju",
+    "normalized_airport": "aju",
+    "normalized_city": "aracaju"
+  },
+  {
+    "country": "Brasil",
+    "airport": "ARU",
+    "city": "Araçatuba",
+    "normalized_airport": "aru",
+    "normalized_city": "aracatuba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "AUX",
+    "city": "Araguaina",
+    "normalized_airport": "aux",
+    "normalized_city": "araguaina"
+  },
+  {
+    "country": "Brasil",
+    "airport": "AAX",
+    "city": "Araxá",
+    "normalized_airport": "aax",
+    "normalized_city": "araxa"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BGX",
+    "city": "Bagé",
+    "normalized_airport": "bgx",
+    "normalized_city": "bage"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BRA",
+    "city": "Barreiras",
+    "normalized_airport": "bra",
+    "normalized_city": "barreiras"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JTC",
+    "city": "Bauru",
+    "normalized_airport": "jtc",
+    "normalized_city": "bauru"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BEL",
+    "city": "Belém",
+    "normalized_airport": "bel",
+    "normalized_city": "belem"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CNF",
+    "city": "Belo Horizonte",
+    "normalized_airport": "cnf",
+    "normalized_city": "belo horizonte"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PLU",
+    "city": "Belo Horizonte",
+    "normalized_airport": "plu",
+    "normalized_city": "belo horizonte"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BVB",
+    "city": "Boa Vista",
+    "normalized_airport": "bvb",
+    "normalized_city": "boa vista"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BSB",
+    "city": "Brasília",
+    "normalized_airport": "bsb",
+    "normalized_city": "brasilia"
+  },
+  {
+    "country": "Brasil",
+    "airport": "OAL",
+    "city": "Cacoal",
+    "normalized_airport": "oal",
+    "normalized_city": "cacoal"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CPV",
+    "city": "Campina Grande",
+    "normalized_airport": "cpv",
+    "normalized_city": "campina grande"
+  },
+  {
+    "country": "Brasil",
+    "airport": "VCP",
+    "city": "Campinas",
+    "normalized_airport": "vcp",
+    "normalized_city": "campinas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CPQ",
+    "city": "Campinas",
+    "normalized_airport": "cpq",
+    "normalized_city": "campinas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CGR",
+    "city": "Campo Grande",
+    "normalized_airport": "cgr",
+    "normalized_city": "campo grande"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CAW",
+    "city": "Campos",
+    "normalized_airport": "caw",
+    "normalized_city": "campos"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CKS",
+    "city": "Carajás",
+    "normalized_airport": "cks",
+    "normalized_city": "carajas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CAC",
+    "city": "Cascavel",
+    "normalized_airport": "cac",
+    "normalized_city": "cascavel"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CXJ",
+    "city": "Caxias do Sul",
+    "normalized_airport": "cxj",
+    "normalized_city": "caxias do sul"
+  },
+  {
+    "country": "Brasil",
+    "airport": "XAP",
+    "city": "Chapecó",
+    "normalized_airport": "xap",
+    "normalized_city": "chapeco"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CDJ",
+    "city": "Conceição do Araguaia",
+    "normalized_airport": "cdj",
+    "normalized_city": "conceicao do araguaia"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CFO",
+    "city": "Confresa",
+    "normalized_airport": "cfo",
+    "normalized_city": "confresa"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CMG",
+    "city": "Corumbá",
+    "normalized_airport": "cmg",
+    "normalized_city": "corumba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CCM",
+    "city": "Criciuma",
+    "normalized_airport": "ccm",
+    "normalized_city": "criciuma"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CZS",
+    "city": "Cruzeiro do Sul",
+    "normalized_airport": "czs",
+    "normalized_city": "cruzeiro do sul"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CGB",
+    "city": "Cuiabá",
+    "normalized_airport": "cgb",
+    "normalized_city": "cuiaba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CWB",
+    "city": "Curitiba",
+    "normalized_airport": "cwb",
+    "normalized_city": "curitiba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "DOU",
+    "city": "Dourados",
+    "normalized_airport": "dou",
+    "normalized_city": "dourados"
+  },
+  {
+    "country": "Brasil",
+    "airport": "FLN",
+    "city": "Florianópolis",
+    "normalized_airport": "fln",
+    "normalized_city": "florianopolis"
+  },
+  {
+    "country": "Brasil",
+    "airport": "FOR",
+    "city": "Fortaleza",
+    "normalized_airport": "for",
+    "normalized_city": "fortaleza"
+  },
+  {
+    "country": "Brasil",
+    "airport": "IGU",
+    "city": "Foz do Iguaçu",
+    "normalized_airport": "igu",
+    "normalized_city": "foz do iguacu"
+  },
+  {
+    "country": "Brasil",
+    "airport": "GYN",
+    "city": "Goiânia",
+    "normalized_airport": "gyn",
+    "normalized_city": "goiania"
+  },
+  {
+    "country": "Brasil",
+    "airport": "IZA",
+    "city": "Goiânia",
+    "normalized_airport": "iza",
+    "normalized_city": "goiania"
+  },
+  {
+    "country": "Brasil",
+    "airport": "GVR",
+    "city": "Governador Valadares",
+    "normalized_airport": "gvr",
+    "normalized_city": "governador valadares"
+  },
+  {
+    "country": "Brasil",
+    "airport": "GRU",
+    "city": "Guarulhos",
+    "normalized_airport": "gru",
+    "normalized_city": "guarulhos"
+  },
+  {
+    "country": "Brasil",
+    "airport": "GRP",
+    "city": "Gurupi",
+    "normalized_airport": "grp",
+    "normalized_city": "gurupi"
+  },
+  {
+    "country": "Brasil",
+    "airport": "IOS",
+    "city": "Ilhéus",
+    "normalized_airport": "ios",
+    "normalized_city": "ilheus"
+  },
+  {
+    "country": "Brasil",
+    "airport": "IMP",
+    "city": "Imperatriz",
+    "normalized_airport": "imp",
+    "normalized_city": "imperatriz"
+  },
+  {
+    "country": "Brasil",
+    "airport": "IPN",
+    "city": "Ipatinga",
+    "normalized_airport": "ipn",
+    "normalized_city": "ipatinga"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JPR",
+    "city": "Ji-Paraná",
+    "normalized_airport": "jpr",
+    "normalized_city": "ji-parana"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JPA",
+    "city": "João Pessoa",
+    "normalized_airport": "jpa",
+    "normalized_city": "joao pessoa"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JOI",
+    "city": "Joinville",
+    "normalized_airport": "joi",
+    "normalized_city": "joinville"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JUA",
+    "city": "Juara",
+    "normalized_airport": "jua",
+    "normalized_city": "juara"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JDO",
+    "city": "Juazeiro do Norte",
+    "normalized_airport": "jdo",
+    "normalized_city": "juazeiro do norte"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JIA",
+    "city": "Juina",
+    "normalized_airport": "jia",
+    "normalized_city": "juina"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JDF",
+    "city": "Juiz de Fora",
+    "normalized_airport": "jdf",
+    "normalized_city": "juiz de fora"
+  },
+  {
+    "country": "Brasil",
+    "airport": "LDB",
+    "city": "Londrina",
+    "normalized_airport": "ldb",
+    "normalized_city": "londrina"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MCP",
+    "city": "Macapá",
+    "normalized_airport": "mcp",
+    "normalized_city": "macapa"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MCZ",
+    "city": "Maceió",
+    "normalized_airport": "mcz",
+    "normalized_city": "maceio"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MAO",
+    "city": "Manaus",
+    "normalized_airport": "mao",
+    "normalized_city": "manaus"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MAB",
+    "city": "Marabá",
+    "normalized_airport": "mab",
+    "normalized_city": "maraba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MII",
+    "city": "Marília",
+    "normalized_airport": "mii",
+    "normalized_city": "marilia"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MGF",
+    "city": "Maringá",
+    "normalized_airport": "mgf",
+    "normalized_city": "maringa"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MQH",
+    "city": "Minacu",
+    "normalized_airport": "mqh",
+    "normalized_city": "minacu"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MOC",
+    "city": "Montes Claros",
+    "normalized_airport": "moc",
+    "normalized_city": "montes claros"
+  },
+  {
+    "country": "Brasil",
+    "airport": "NAT",
+    "city": "Natal",
+    "normalized_airport": "nat",
+    "normalized_city": "natal"
+  },
+  {
+    "country": "Brasil",
+    "airport": "NVT",
+    "city": "Navegantes",
+    "normalized_airport": "nvt",
+    "normalized_city": "navegantes"
+  },
+  {
+    "country": "Brasil",
+    "airport": "OIA",
+    "city": "Ourilândia",
+    "normalized_airport": "oia",
+    "normalized_city": "ourilandia"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PMW",
+    "city": "Palmas",
+    "normalized_airport": "pmw",
+    "normalized_city": "palmas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PHB",
+    "city": "Parnaíba",
+    "normalized_airport": "phb",
+    "normalized_city": "parnaiba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PFB",
+    "city": "Passo Fundo",
+    "normalized_airport": "pfb",
+    "normalized_city": "passo fundo"
+  },
+  {
+    "country": "Brasil",
+    "airport": "POJ",
+    "city": "Patos de Minas",
+    "normalized_airport": "poj",
+    "normalized_city": "patos de minas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PET",
+    "city": "Pelotas",
+    "normalized_airport": "pet",
+    "normalized_city": "pelotas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PNZ",
+    "city": "Petrolina",
+    "normalized_airport": "pnz",
+    "normalized_city": "petrolina"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PMG",
+    "city": "Ponta Porã",
+    "normalized_airport": "pmg",
+    "normalized_city": "ponta pora"
+  },
+  {
+    "country": "Brasil",
+    "airport": "POA",
+    "city": "Porto Alegre",
+    "normalized_airport": "poa",
+    "normalized_city": "porto alegre"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BPS",
+    "city": "Porto Seguro",
+    "normalized_airport": "bps",
+    "normalized_city": "porto seguro"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PVH",
+    "city": "Porto Velho",
+    "normalized_airport": "pvh",
+    "normalized_city": "porto velho"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PPB",
+    "city": "Presidente Prudente",
+    "normalized_airport": "ppb",
+    "normalized_city": "presidente prudente"
+  },
+  {
+    "country": "Brasil",
+    "airport": "REC",
+    "city": "Recife",
+    "normalized_airport": "rec",
+    "normalized_city": "recife"
+  },
+  {
+    "country": "Brasil",
+    "airport": "RDC",
+    "city": "Redenção",
+    "normalized_airport": "rdc",
+    "normalized_city": "redencao"
+  },
+  {
+    "country": "Brasil",
+    "airport": "RAO",
+    "city": "Ribeirão Preto",
+    "normalized_airport": "rao",
+    "normalized_city": "ribeirao preto"
+  },
+  {
+    "country": "Brasil",
+    "airport": "RBR",
+    "city": "Rio Branco",
+    "normalized_airport": "rbr",
+    "normalized_city": "rio branco"
+  },
+  {
+    "country": "Brasil",
+    "airport": "GIG",
+    "city": "Rio de Janeiro",
+    "normalized_airport": "gig",
+    "normalized_city": "rio de janeiro"
+  },
+  {
+    "country": "Brasil",
+    "airport": "SDU",
+    "city": "Rio de Janeiro",
+    "normalized_airport": "sdu",
+    "normalized_city": "rio de janeiro"
+  },
+  {
+    "country": "Brasil",
+    "airport": "RVD",
+    "city": "Rio Verde",
+    "normalized_airport": "rvd",
+    "normalized_city": "rio verde"
+  },
+  {
+    "country": "Brasil",
+    "airport": "ROO",
+    "city": "Rondonópolis",
+    "normalized_airport": "roo",
+    "normalized_city": "rondonopolis"
+  },
+  {
+    "country": "Brasil",
+    "airport": "SSA",
+    "city": "Salvador",
+    "normalized_airport": "ssa",
+    "normalized_city": "salvador"
+  },
+  {
+    "country": "Brasil",
+    "airport": "STM",
+    "city": "Santarém",
+    "normalized_airport": "stm",
+    "normalized_city": "santarem"
+  },
+  {
+    "country": "Brasil",
+    "airport": "SXO",
+    "city": "São Félix do Araguaia",
+    "normalized_airport": "sxo",
+    "normalized_city": "sao felix do araguaia"
+  },
+  {
+    "country": "Brasil",
+    "airport": "SJP",
+    "city": "São José do Rio Preto",
+    "normalized_airport": "sjp",
+    "normalized_city": "sao jose do rio preto"
+  },
+  {
+    "country": "Brasil",
+    "airport": "SLZ",
+    "city": "São Luís",
+    "normalized_airport": "slz",
+    "normalized_city": "sao luis"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CGH",
+    "city": "São Paulo",
+    "normalized_airport": "cgh",
+    "normalized_city": "sao paulo"
+  },
+  {
+    "country": "Brasil",
+    "airport": "OPS",
+    "city": "Sinop",
+    "normalized_airport": "ops",
+    "normalized_city": "sinop"
+  },
+  {
+    "country": "Brasil",
+    "airport": "THE",
+    "city": "Teresina",
+    "normalized_airport": "the",
+    "normalized_city": "teresina"
+  },
+  {
+    "country": "Brasil",
+    "airport": "UBA",
+    "city": "Uberaba",
+    "normalized_airport": "uba",
+    "normalized_city": "uberaba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "UDI",
+    "city": "Uberlândia",
+    "normalized_airport": "udi",
+    "normalized_city": "uberlandia"
+  },
+  {
+    "country": "Brasil",
+    "airport": "URG",
+    "city": "Uruguaiana",
+    "normalized_airport": "urg",
+    "normalized_city": "uruguaiana"
+  },
+  {
+    "country": "Brasil",
+    "airport": "VAG",
+    "city": "Varginha",
+    "normalized_airport": "vag",
+    "normalized_city": "varginha"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BVH",
+    "city": "Vilhena",
+    "normalized_airport": "bvh",
+    "normalized_city": "vilhena"
+  },
+  {
+    "country": "Brasil",
+    "airport": "VIX",
+    "city": "Vitória",
+    "normalized_airport": "vix",
+    "normalized_city": "vitoria"
+  },
+  {
+    "country": "Brasil",
+    "airport": "VDC",
+    "city": "Vitória da Conquista",
+    "normalized_airport": "vdc",
+    "normalized_city": "vitoria da conquista"
+  },
+  {
+    "country": "Brasil",
+    "airport": "TBT",
+    "city": "Tabatinga",
+    "normalized_airport": "tbt",
+    "normalized_city": "tabatinga"
+  },
+  {
+    "country": "Brasil",
+    "airport": "SJK",
+    "city": "São José dos Campos",
+    "normalized_airport": "sjk",
+    "normalized_city": "sao jose dos campos"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CLV",
+    "city": "Caldas Novas",
+    "normalized_airport": "clv",
+    "normalized_city": "caldas novas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "FEN",
+    "city": "Fernando de Noronha",
+    "normalized_airport": "fen",
+    "normalized_city": "fernando de noronha"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PIN",
+    "city": "Parintins",
+    "normalized_airport": "pin",
+    "normalized_city": "parintins"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BYO",
+    "city": "Bonito",
+    "normalized_airport": "byo",
+    "normalized_city": "bonito"
+  },
+  {
+    "country": "Brasil",
+    "airport": "SAO",
+    "city": "São Paulo",
+    "normalized_airport": "sao",
+    "normalized_city": "sao paulo"
+  },
+  {
+    "country": "Brasil",
+    "airport": "RIA",
+    "city": "Santa Maria",
+    "normalized_airport": "ria",
+    "normalized_city": "santa maria"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MEA",
+    "city": "Macaé",
+    "normalized_airport": "mea",
+    "normalized_city": "macae"
+  },
+  {
+    "country": "Brasil",
+    "airport": "LEC",
+    "city": "Lençóis",
+    "normalized_airport": "lec",
+    "normalized_city": "lencois"
+  },
+  {
+    "country": "Brasil",
+    "airport": "ITB",
+    "city": "Itaituba",
+    "normalized_airport": "itb",
+    "normalized_city": "itaituba"
+  },
+  {
+    "country": "Brasil",
+    "airport": "DIQ",
+    "city": "Divinópolis",
+    "normalized_airport": "diq",
+    "normalized_city": "divinopolis"
+  },
+  {
+    "country": "Brasil",
+    "airport": "TJL",
+    "city": "Três Lagoas",
+    "normalized_airport": "tjl",
+    "normalized_city": "tres lagoas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "TFF",
+    "city": "Tefé",
+    "normalized_airport": "tff",
+    "normalized_city": "tefe"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JJG",
+    "city": "Jaguaruna",
+    "normalized_airport": "jjg",
+    "normalized_city": "jaguaruna"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BPG",
+    "city": "Barra dos Garças",
+    "normalized_airport": "bpg",
+    "normalized_city": "barra dos garcas"
+  },
+  {
+    "country": "Brasil",
+    "airport": "LAJ",
+    "city": "Lages",
+    "normalized_airport": "laj",
+    "normalized_city": "lages"
+  },
+  {
+    "country": "Brasil",
+    "airport": "SRA",
+    "city": "Santa Rosa",
+    "normalized_airport": "sra",
+    "normalized_city": "santa rosa"
+  },
+  {
+    "country": "Brasil",
+    "airport": "FEC",
+    "city": "Feira de Santana",
+    "normalized_airport": "fec",
+    "normalized_city": "feira de santana"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CIZ",
+    "city": "Coari",
+    "normalized_airport": "ciz",
+    "normalized_city": "coari"
+  },
+  {
+    "country": "Brasil",
+    "airport": "CAF",
+    "city": "Caruari",
+    "normalized_airport": "caf",
+    "normalized_city": "caruari"
+  },
+  {
+    "country": "Brasil",
+    "airport": "PGZ",
+    "city": "Ponta Grossa",
+    "normalized_airport": "pgz",
+    "normalized_city": "ponta grossa"
+  },
+  {
+    "country": "Brasil",
+    "airport": "JJD",
+    "city": "Jericoacoara",
+    "normalized_airport": "jjd",
+    "normalized_city": "jericoacoara"
+  },
+  {
+    "country": "Brasil",
+    "airport": "EEA",
+    "city": "Correia Pinto",
+    "normalized_airport": "eea",
+    "normalized_city": "correia pinto"
+  },
+  {
+    "country": "Brasil",
+    "airport": "GEL",
+    "city": "Santo Ângelo",
+    "normalized_airport": "gel",
+    "normalized_city": "santo angelo"
+  },
+  {
+    "country": "Brasil",
+    "airport": "RRJ",
+    "city": "Rio de Janeiro",
+    "normalized_airport": "rrj",
+    "normalized_city": "rio de janeiro"
+  },
+  {
+    "country": "Brasil",
+    "airport": "MVF",
+    "city": "Mossoró",
+    "normalized_airport": "mvf",
+    "normalized_city": "mossoro"
+  },
+  {
+    "country": "Brasil",
+    "airport": "OTP",
+    "city": "Bucharest",
+    "normalized_airport": "otp",
+    "normalized_city": "bucharest"
+  },
+  {
+    "country": "Brasil",
+    "airport": "LNZ",
+    "city": "Linz",
+    "normalized_airport": "lnz",
+    "normalized_city": "linz"
+  },
+  {
+    "country": "Brasil",
+    "airport": "BSS",
+    "city": "Balsas",
+    "normalized_airport": "bss",
+    "normalized_city": "balsas"
+  },
+  {
+    "country": "Bulgária",
+    "airport": "SOF",
+    "city": "Sofia",
+    "normalized_airport": "sof",
+    "normalized_city": "sofia"
+  },
+  {
+    "country": "Cabo Verde",
+    "airport": "RAI",
+    "city": "Praia",
+    "normalized_airport": "rai",
+    "normalized_city": "praia"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YXU",
+    "city": "London",
+    "normalized_airport": "yxu",
+    "normalized_city": "london"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YUL",
+    "city": "Montreal",
+    "normalized_airport": "yul",
+    "normalized_city": "montreal"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YOW",
+    "city": "Ottawa",
+    "normalized_airport": "yow",
+    "normalized_city": "ottawa"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YQB",
+    "city": "Quebéc",
+    "normalized_airport": "yqb",
+    "normalized_city": "quebec"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YVR",
+    "city": "Richmond",
+    "normalized_airport": "yvr",
+    "normalized_city": "richmond"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YYZ",
+    "city": "Toronto",
+    "normalized_airport": "yyz",
+    "normalized_city": "toronto"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YEG",
+    "city": "Edmonton",
+    "normalized_airport": "yeg",
+    "normalized_city": "edmonton"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YYC",
+    "city": "Calgary",
+    "normalized_airport": "yyc",
+    "normalized_city": "calgary"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YHZ",
+    "city": "Halifax",
+    "normalized_airport": "yhz",
+    "normalized_city": "halifax"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YTS",
+    "city": "Timmins",
+    "normalized_airport": "yts",
+    "normalized_city": "timmins"
+  },
+  {
+    "country": "Canadá",
+    "airport": "YYJ",
+    "city": "Victoria",
+    "normalized_airport": "yyj",
+    "normalized_city": "victoria"
+  },
+  {
+    "country": "Catar",
+    "airport": "DOH",
+    "city": "Doha",
+    "normalized_airport": "doh",
+    "normalized_city": "doha"
+  },
+  {
+    "country": "Chile",
+    "airport": "ARI",
+    "city": "Arica",
+    "normalized_airport": "ari",
+    "normalized_city": "arica"
+  },
+  {
+    "country": "Chile",
+    "airport": "SCL",
+    "city": "Santiago",
+    "normalized_airport": "scl",
+    "normalized_city": "santiago"
+  },
+  {
+    "country": "Chile",
+    "airport": "ANF",
+    "city": "Antofagasta",
+    "normalized_airport": "anf",
+    "normalized_city": "antofagasta"
+  },
+  {
+    "country": "Chile",
+    "airport": "CJC",
+    "city": "Calama",
+    "normalized_airport": "cjc",
+    "normalized_city": "calama"
+  },
+  {
+    "country": "Chile",
+    "airport": "CPO",
+    "city": "Deserto de Atacama",
+    "normalized_airport": "cpo",
+    "normalized_city": "deserto de atacama"
+  },
+  {
+    "country": "Chile",
+    "airport": "LSC",
+    "city": "La Serena",
+    "normalized_airport": "lsc",
+    "normalized_city": "la serena"
+  },
+  {
+    "country": "China",
+    "airport": "CAN",
+    "city": "Guangzhou",
+    "normalized_airport": "can",
+    "normalized_city": "guangzhou"
+  },
+  {
+    "country": "China",
+    "airport": "HKG",
+    "city": "Hong Kong",
+    "normalized_airport": "hkg",
+    "normalized_city": "hong kong"
+  },
+  {
+    "country": "China",
+    "airport": "PEK",
+    "city": "Pequim",
+    "normalized_airport": "pek",
+    "normalized_city": "pequim"
+  },
+  {
+    "country": "China",
+    "airport": "SHA",
+    "city": "Shanghai",
+    "normalized_airport": "sha",
+    "normalized_city": "shanghai"
+  },
+  {
+    "country": "China",
+    "airport": "PVG",
+    "city": "Xangai",
+    "normalized_airport": "pvg",
+    "normalized_city": "xangai"
+  },
+  {
+    "country": "China",
+    "airport": "XMN",
+    "city": "Xiamen",
+    "normalized_airport": "xmn",
+    "normalized_city": "xiamen"
+  },
+  {
+    "country": "China",
+    "airport": "CHG",
+    "city": "Chaoyang",
+    "normalized_airport": "chg",
+    "normalized_city": "chaoyang"
+  },
+  {
+    "country": "China",
+    "airport": "JJN",
+    "city": "Quanzhou",
+    "normalized_airport": "jjn",
+    "normalized_city": "quanzhou"
+  },
+  {
+    "country": "China",
+    "airport": "TAO",
+    "city": "Qingdao",
+    "normalized_airport": "tao",
+    "normalized_city": "qingdao"
+  },
+  {
+    "country": "China",
+    "airport": "SZX",
+    "city": "Shenzen",
+    "normalized_airport": "szx",
+    "normalized_city": "shenzen"
+  },
+  {
+    "country": "Chipre",
+    "airport": "ECN",
+    "city": "Nicosia",
+    "normalized_airport": "ecn",
+    "normalized_city": "nicosia"
+  },
+  {
+    "country": "Colômbia",
+    "airport": "BOG",
+    "city": "Bogotá",
+    "normalized_airport": "bog",
+    "normalized_city": "bogota"
+  },
+  {
+    "country": "Colômbia",
+    "airport": "CUI",
+    "city": "Currillo",
+    "normalized_airport": "cui",
+    "normalized_city": "currillo"
+  },
+  {
+    "country": "Colômbia",
+    "airport": "MDE",
+    "city": "Medelin",
+    "normalized_airport": "mde",
+    "normalized_city": "medelin"
+  },
+  {
+    "country": "Colômbia",
+    "airport": "EOH",
+    "city": "Medellín",
+    "normalized_airport": "eoh",
+    "normalized_city": "medellin"
+  },
+  {
+    "country": "Colômbia",
+    "airport": "CLO",
+    "city": "Cali",
+    "normalized_airport": "clo",
+    "normalized_city": "cali"
+  },
+  {
+    "country": "Colômbia",
+    "airport": "CTG",
+    "city": "Cartagena",
+    "normalized_airport": "ctg",
+    "normalized_city": "cartagena"
+  },
+  {
+    "country": "Colômbia",
+    "airport": "PPN",
+    "city": "Popayan",
+    "normalized_airport": "ppn",
+    "normalized_city": "popayan"
+  },
+  {
+    "country": "Coréia do Sul",
+    "airport": "ICN",
+    "city": "Seul",
+    "normalized_airport": "icn",
+    "normalized_city": "seul"
+  },
+  {
+    "country": "Costa Rica",
+    "airport": "SJO",
+    "city": "San Jose",
+    "normalized_airport": "sjo",
+    "normalized_city": "san jose"
+  },
+  {
+    "country": "Croácia",
+    "airport": "DBV",
+    "city": "Dubrovnik",
+    "normalized_airport": "dbv",
+    "normalized_city": "dubrovnik"
+  },
+  {
+    "country": "Croácia",
+    "airport": "ZAG",
+    "city": "Zagreb",
+    "normalized_airport": "zag",
+    "normalized_city": "zagreb"
+  },
+  {
+    "country": "Cuba",
+    "airport": "HAV",
+    "city": "Havana",
+    "normalized_airport": "hav",
+    "normalized_city": "havana"
+  },
+  {
+    "country": "Dinamarca",
+    "airport": "CPH",
+    "city": "Copenhagen",
+    "normalized_airport": "cph",
+    "normalized_city": "copenhagen"
+  },
+  {
+    "country": "Dinamarca",
+    "airport": "AAR",
+    "city": "Aarhus",
+    "normalized_airport": "aar",
+    "normalized_city": "aarhus"
+  },
+  {
+    "country": "Dinamarca",
+    "airport": "AAL",
+    "city": "Alborg",
+    "normalized_airport": "aal",
+    "normalized_city": "alborg"
+  },
+  {
+    "country": "Egito",
+    "airport": "CAI",
+    "city": "Cairo",
+    "normalized_airport": "cai",
+    "normalized_city": "cairo"
+  },
+  {
+    "country": "Egito",
+    "airport": "SSH",
+    "city": "Sharm El Sheikh",
+    "normalized_airport": "ssh",
+    "normalized_city": "sharm el sheikh"
+  },
+  {
+    "country": "Emirados Árabes Unidos",
+    "airport": "DXB",
+    "city": "Dubai",
+    "normalized_airport": "dxb",
+    "normalized_city": "dubai"
+  },
+  {
+    "country": "Emirados Árabes Unidos",
+    "airport": "AUH",
+    "city": "Abu Dhabi",
+    "normalized_airport": "auh",
+    "normalized_city": "abu dhabi"
+  },
+  {
+    "country": "Equador",
+    "airport": "UIO",
+    "city": "Quito",
+    "normalized_airport": "uio",
+    "normalized_city": "quito"
+  },
+  {
+    "country": "Equador",
+    "airport": "GYE",
+    "city": "Guayaquil",
+    "normalized_airport": "gye",
+    "normalized_city": "guayaquil"
+  },
+  {
+    "country": "Escócia",
+    "airport": "EDI",
+    "city": "Edimburgo",
+    "normalized_airport": "edi",
+    "normalized_city": "edimburgo"
+  },
+  {
+    "country": "Eslovênia",
+    "airport": "LJU",
+    "city": "Ljubljana",
+    "normalized_airport": "lju",
+    "normalized_city": "ljubljana"
+  },
+  {
+    "country": "Espanha",
+    "airport": "BCN",
+    "city": "Barcelona",
+    "normalized_airport": "bcn",
+    "normalized_city": "barcelona"
+  },
+  {
+    "country": "Espanha",
+    "airport": "MAD",
+    "city": "Madri",
+    "normalized_airport": "mad",
+    "normalized_city": "madri"
+  },
+  {
+    "country": "Espanha",
+    "airport": "TOJ",
+    "city": "Madri",
+    "normalized_airport": "toj",
+    "normalized_city": "madri"
+  },
+  {
+    "country": "Espanha",
+    "airport": "SCQ",
+    "city": "Santiago de Compostela",
+    "normalized_airport": "scq",
+    "normalized_city": "santiago de compostela"
+  },
+  {
+    "country": "Espanha",
+    "airport": "SPO",
+    "city": "Sevilha",
+    "normalized_airport": "spo",
+    "normalized_city": "sevilha"
+  },
+  {
+    "country": "Espanha",
+    "airport": "VLC",
+    "city": "Valência",
+    "normalized_airport": "vlc",
+    "normalized_city": "valencia"
+  },
+  {
+    "country": "Espanha",
+    "airport": "SDR",
+    "city": "Santander",
+    "normalized_airport": "sdr",
+    "normalized_city": "santander"
+  },
+  {
+    "country": "Espanha",
+    "airport": "VGO",
+    "city": "Vigo",
+    "normalized_airport": "vgo",
+    "normalized_city": "vigo"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CAK",
+    "city": "Akron/Canton",
+    "normalized_airport": "cak",
+    "normalized_city": "akron/canton"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "ANA",
+    "city": "Anaheim",
+    "normalized_airport": "ana",
+    "normalized_city": "anaheim"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "ATL",
+    "city": "Atlanta",
+    "normalized_airport": "atl",
+    "normalized_city": "atlanta"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "BWI",
+    "city": "Baltimore",
+    "normalized_airport": "bwi",
+    "normalized_city": "baltimore"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "BOS",
+    "city": "Boston",
+    "normalized_airport": "bos",
+    "normalized_city": "boston"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MDW",
+    "city": "Chicago",
+    "normalized_airport": "mdw",
+    "normalized_city": "chicago"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "ORD",
+    "city": "Chicago",
+    "normalized_airport": "ord",
+    "normalized_city": "chicago"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CHI",
+    "city": "Chicago",
+    "normalized_airport": "chi",
+    "normalized_city": "chicago"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CVG",
+    "city": "Covington",
+    "normalized_airport": "cvg",
+    "normalized_city": "covington"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "DFW",
+    "city": "Dallas",
+    "normalized_airport": "dfw",
+    "normalized_city": "dallas"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "DAL",
+    "city": "Dallas",
+    "normalized_airport": "dal",
+    "normalized_city": "dallas"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "DEN",
+    "city": "Denver",
+    "normalized_airport": "den",
+    "normalized_city": "denver"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "DSM",
+    "city": "Des Moines",
+    "normalized_airport": "dsm",
+    "normalized_city": "des moines"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "DTW",
+    "city": "Detroit",
+    "normalized_airport": "dtw",
+    "normalized_city": "detroit"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "ELP",
+    "city": "El Passo",
+    "normalized_airport": "elp",
+    "normalized_city": "el passo"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "GRE",
+    "city": "Greenville",
+    "normalized_airport": "gre",
+    "normalized_city": "greenville"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MDT",
+    "city": "Harrisburg",
+    "normalized_airport": "mdt",
+    "normalized_city": "harrisburg"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "IAH",
+    "city": "Houston",
+    "normalized_airport": "iah",
+    "normalized_city": "houston"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "HOU",
+    "city": "Houston",
+    "normalized_airport": "hou",
+    "normalized_city": "houston"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "IND",
+    "city": "Indianápolis",
+    "normalized_airport": "ind",
+    "normalized_city": "indianapolis"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "LAS",
+    "city": "Las Vegas",
+    "normalized_airport": "las",
+    "normalized_city": "las vegas"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "LAX",
+    "city": "Los Angeles",
+    "normalized_airport": "lax",
+    "normalized_city": "los angeles"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MIA",
+    "city": "Miami",
+    "normalized_airport": "mia",
+    "normalized_city": "miami"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MTP",
+    "city": "Montauk",
+    "normalized_airport": "mtp",
+    "normalized_city": "montauk"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "JFK",
+    "city": "Nova Iorque",
+    "normalized_airport": "jfk",
+    "normalized_city": "nova iorque"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "LGA",
+    "city": "Nova Iorque",
+    "normalized_airport": "lga",
+    "normalized_city": "nova iorque"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "EWR",
+    "city": "Newark",
+    "normalized_airport": "ewr",
+    "normalized_city": "newark"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "COM",
+    "city": "Orlando",
+    "normalized_airport": "com",
+    "normalized_city": "orlando"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "PHL",
+    "city": "Filadélfia",
+    "normalized_airport": "phl",
+    "normalized_city": "filadelfia"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "PHX",
+    "city": "Phoenix",
+    "normalized_airport": "phx",
+    "normalized_city": "phoenix"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "PIT",
+    "city": "Pittsburgh",
+    "normalized_airport": "pit",
+    "normalized_city": "pittsburgh"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "PVD",
+    "city": "Providence",
+    "normalized_airport": "pvd",
+    "normalized_city": "providence"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SFO",
+    "city": "São Francisco",
+    "normalized_airport": "sfo",
+    "normalized_city": "sao francisco"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SYR",
+    "city": "Syracuse",
+    "normalized_airport": "syr",
+    "normalized_city": "syracuse"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "TUS",
+    "city": "Tucson",
+    "normalized_airport": "tus",
+    "normalized_city": "tucson"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "IAD",
+    "city": "Washington",
+    "normalized_airport": "iad",
+    "normalized_city": "washington"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "DCA",
+    "city": "Washington, DC",
+    "normalized_airport": "dca",
+    "normalized_city": "washington, dc"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "AUS",
+    "city": "Austin",
+    "normalized_airport": "aus",
+    "normalized_city": "austin"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SDY",
+    "city": "Sidney",
+    "normalized_airport": "sdy",
+    "normalized_city": "sidney"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CMH",
+    "city": "Columbus",
+    "normalized_airport": "cmh",
+    "normalized_city": "columbus"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CAE",
+    "city": "Columbia",
+    "normalized_airport": "cae",
+    "normalized_city": "columbia"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CHO",
+    "city": "Charlottesville",
+    "normalized_airport": "cho",
+    "normalized_city": "charlottesville"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CLT",
+    "city": "Charlotte",
+    "normalized_airport": "clt",
+    "normalized_city": "charlotte"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MSN",
+    "city": "Madison",
+    "normalized_airport": "msn",
+    "normalized_city": "madison"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "RDU",
+    "city": "Raleigh-Durham",
+    "normalized_airport": "rdu",
+    "normalized_city": "raleigh-durham"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SAN",
+    "city": "San Diego",
+    "normalized_airport": "san",
+    "normalized_city": "san diego"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SEA",
+    "city": "Seattle",
+    "normalized_airport": "sea",
+    "normalized_city": "seattle"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SMF",
+    "city": "Sacramento",
+    "normalized_airport": "smf",
+    "normalized_city": "sacramento"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "XNA",
+    "city": "Bentonville",
+    "normalized_airport": "xna",
+    "normalized_city": "bentonville"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "TPA",
+    "city": "Tampa",
+    "normalized_airport": "tpa",
+    "normalized_city": "tampa"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MCO",
+    "city": "Orlando",
+    "normalized_airport": "mco",
+    "normalized_city": "orlando"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "LIH",
+    "city": "Lihue",
+    "normalized_airport": "lih",
+    "normalized_city": "lihue"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MSY",
+    "city": "Nova Orleans",
+    "normalized_airport": "msy",
+    "normalized_city": "nova orleans"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "PDX",
+    "city": "Portland",
+    "normalized_airport": "pdx",
+    "normalized_city": "portland"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SCE",
+    "city": "State College",
+    "normalized_airport": "sce",
+    "normalized_city": "state college"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "FLL",
+    "city": "Fort Lauderdale",
+    "normalized_airport": "fll",
+    "normalized_city": "fort lauderdale"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MRY",
+    "city": "Monterey",
+    "normalized_airport": "mry",
+    "normalized_city": "monterey"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MSY",
+    "city": "Nava Orleans",
+    "normalized_airport": "msy",
+    "normalized_city": "nava orleans"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "RNO",
+    "city": "Reno",
+    "normalized_airport": "rno",
+    "normalized_city": "reno"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "ALB",
+    "city": "Albânia",
+    "normalized_airport": "alb",
+    "normalized_city": "albania"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CMI",
+    "city": "Illinois",
+    "normalized_airport": "cmi",
+    "normalized_city": "illinois"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "DAY",
+    "city": "Ohio",
+    "normalized_airport": "day",
+    "normalized_city": "ohio"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "TYR",
+    "city": "Texas",
+    "normalized_airport": "tyr",
+    "normalized_city": "texas"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SAT",
+    "city": "San Antonio",
+    "normalized_airport": "sat",
+    "normalized_city": "san antonio"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SLC",
+    "city": "Salt Lake City",
+    "normalized_airport": "slc",
+    "normalized_city": "salt lake city"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SGH",
+    "city": "Springfield",
+    "normalized_airport": "sgh",
+    "normalized_city": "springfield"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "LSE",
+    "city": "La Crosse",
+    "normalized_airport": "lse",
+    "normalized_city": "la crosse"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CID",
+    "city": "Cedar Rapids",
+    "normalized_airport": "cid",
+    "normalized_city": "cedar rapids"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "FLG",
+    "city": "Flagstaff",
+    "normalized_airport": "flg",
+    "normalized_city": "flagstaff"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SBA",
+    "city": "Santa Barbara",
+    "normalized_airport": "sba",
+    "normalized_city": "santa barbara"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "BDL",
+    "city": "Windsor Locks",
+    "normalized_airport": "bdl",
+    "normalized_city": "windsor locks"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "FFL",
+    "city": "Fairfield",
+    "normalized_airport": "ffl",
+    "normalized_city": "fairfield"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SBN",
+    "city": "South Bend",
+    "normalized_airport": "sbn",
+    "normalized_city": "south bend"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "STL",
+    "city": "St. Louis",
+    "normalized_airport": "stl",
+    "normalized_city": "st. louis"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SCH",
+    "city": "Schenectady",
+    "normalized_airport": "sch",
+    "normalized_city": "schenectady"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SJC",
+    "city": "San Jose",
+    "normalized_airport": "sjc",
+    "normalized_city": "san jose"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "SNA",
+    "city": "Santa Ana",
+    "normalized_airport": "sna",
+    "normalized_city": "santa ana"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MSP",
+    "city": "Minneapolis",
+    "normalized_airport": "msp",
+    "normalized_city": "minneapolis"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "TYS",
+    "city": "Knoxville",
+    "normalized_airport": "tys",
+    "normalized_city": "knoxville"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "MPT",
+    "city": "Montauk",
+    "normalized_airport": "mpt",
+    "normalized_city": "montauk"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "CLE",
+    "city": "Ohio",
+    "normalized_airport": "cle",
+    "normalized_city": "ohio"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "HNL",
+    "city": "Honolulu",
+    "normalized_airport": "hnl",
+    "normalized_city": "honolulu"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "ITH",
+    "city": "Ithaca",
+    "normalized_airport": "ith",
+    "normalized_city": "ithaca"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "PWM",
+    "city": "Portland",
+    "normalized_airport": "pwm",
+    "normalized_city": "portland"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "BNA",
+    "city": "Nashville",
+    "normalized_airport": "bna",
+    "normalized_city": "nashville"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "BBB",
+    "city": "Benson",
+    "normalized_airport": "bbb",
+    "normalized_city": "benson"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "EYW",
+    "city": "Key West",
+    "normalized_airport": "eyw",
+    "normalized_city": "key west"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "OKC",
+    "city": "Oklahoma City",
+    "normalized_airport": "okc",
+    "normalized_city": "oklahoma city"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "LEX",
+    "city": "Lexington",
+    "normalized_airport": "lex",
+    "normalized_city": "lexington"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "ICT",
+    "city": "Wichita",
+    "normalized_airport": "ict",
+    "normalized_city": "wichita"
+  },
+  {
+    "country": "Estados Unidos",
+    "airport": "EAS",
+    "city": "San Sebastian",
+    "normalized_airport": "eas",
+    "normalized_city": "san sebastian"
+  },
+  {
+    "country": "Estônia",
+    "airport": "TLL",
+    "city": "Tallinn",
+    "normalized_airport": "tll",
+    "normalized_city": "tallinn"
+  },
+  {
+    "country": "Etiópia",
+    "airport": "ADD",
+    "city": "Addis Ababa",
+    "normalized_airport": "add",
+    "normalized_city": "addis ababa"
+  },
+  {
+    "country": "Filipinas",
+    "airport": "CRM",
+    "city": "Catarman",
+    "normalized_airport": "crm",
+    "normalized_city": "catarman"
+  },
+  {
+    "country": "Filipinas",
+    "airport": "MNL",
+    "city": "Manila",
+    "normalized_airport": "mnl",
+    "normalized_city": "manila"
+  },
+  {
+    "country": "Finlândia",
+    "airport": "HEL",
+    "city": "Vantaa",
+    "normalized_airport": "hel",
+    "normalized_city": "vantaa"
+  },
+  {
+    "country": "França",
+    "airport": "LYS",
+    "city": "Lyon",
+    "normalized_airport": "lys",
+    "normalized_city": "lyon"
+  },
+  {
+    "country": "França",
+    "airport": "MRS",
+    "city": "Marselha",
+    "normalized_airport": "mrs",
+    "normalized_city": "marselha"
+  },
+  {
+    "country": "França",
+    "airport": "CDG",
+    "city": "Paris",
+    "normalized_airport": "cdg",
+    "normalized_city": "paris"
+  },
+  {
+    "country": "França",
+    "airport": "SXB",
+    "city": "Strasbourg",
+    "normalized_airport": "sxb",
+    "normalized_city": "strasbourg"
+  },
+  {
+    "country": "França",
+    "airport": "ORY",
+    "city": "Paris (Orly)",
+    "normalized_airport": "ory",
+    "normalized_city": "paris (orly)"
+  },
+  {
+    "country": "França",
+    "airport": "TLS",
+    "city": "Toulouse",
+    "normalized_airport": "tls",
+    "normalized_city": "toulouse"
+  },
+  {
+    "country": "França",
+    "airport": "LIL",
+    "city": "Lille",
+    "normalized_airport": "lil",
+    "normalized_city": "lille"
+  },
+  {
+    "country": "França",
+    "airport": "CFE",
+    "city": "Clermont-Ferrand",
+    "normalized_airport": "cfe",
+    "normalized_city": "clermont-ferrand"
+  },
+  {
+    "country": "França",
+    "airport": "BOD",
+    "city": "Bordeaux",
+    "normalized_airport": "bod",
+    "normalized_city": "bordeaux"
+  },
+  {
+    "country": "França",
+    "airport": "RNS",
+    "city": "Rennes",
+    "normalized_airport": "rns",
+    "normalized_city": "rennes"
+  },
+  {
+    "country": "França",
+    "airport": "NCE",
+    "city": "Nice",
+    "normalized_airport": "nce",
+    "normalized_city": "nice"
+  },
+  {
+    "country": "Granada",
+    "airport": "CRU",
+    "city": "Lauriston",
+    "normalized_airport": "cru",
+    "normalized_city": "lauriston"
+  },
+  {
+    "country": "Grécia",
+    "airport": "ATH",
+    "city": "Atenas",
+    "normalized_airport": "ath",
+    "normalized_city": "atenas"
+  },
+  {
+    "country": "Grécia",
+    "airport": "CHQ",
+    "city": "Souda",
+    "normalized_airport": "chq",
+    "normalized_city": "souda"
+  },
+  {
+    "country": "Grécia",
+    "airport": "HER",
+    "city": "Iraklion",
+    "normalized_airport": "her",
+    "normalized_city": "iraklion"
+  },
+  {
+    "country": "Grécia",
+    "airport": "SKG",
+    "city": "Thessaloniki",
+    "normalized_airport": "skg",
+    "normalized_city": "thessaloniki"
+  },
+  {
+    "country": "Guatemala",
+    "airport": "GUA",
+    "city": "Cidade da Guatemala",
+    "normalized_airport": "gua",
+    "normalized_city": "cidade da guatemala"
+  },
+  {
+    "country": "Guiné-Bissau",
+    "airport": "OXB",
+    "city": "Bissau",
+    "normalized_airport": "oxb",
+    "normalized_city": "bissau"
+  },
+  {
+    "country": "Honduras",
+    "airport": "TGU",
+    "city": "Tegucigalpa",
+    "normalized_airport": "tgu",
+    "normalized_city": "tegucigalpa"
+  },
+  {
+    "country": "Honduras",
+    "airport": "SAP",
+    "city": "La Mesa",
+    "normalized_airport": "sap",
+    "normalized_city": "la mesa"
+  },
+  {
+    "country": "Hungria",
+    "airport": "BUD",
+    "city": "Budapeste",
+    "normalized_airport": "bud",
+    "normalized_city": "budapeste"
+  },
+  {
+    "country": "Índia",
+    "airport": "BLR",
+    "city": "Bangalore",
+    "normalized_airport": "blr",
+    "normalized_city": "bangalore"
+  },
+  {
+    "country": "Índia",
+    "airport": "BOM",
+    "city": "Bombaim",
+    "normalized_airport": "bom",
+    "normalized_city": "bombaim"
+  },
+  {
+    "country": "Índia",
+    "airport": "CCU",
+    "city": "Calcutá",
+    "normalized_airport": "ccu",
+    "normalized_city": "calcuta"
+  },
+  {
+    "country": "Índia",
+    "airport": "DEL",
+    "city": "Nova Delhi",
+    "normalized_airport": "del",
+    "normalized_city": "nova delhi"
+  },
+  {
+    "country": "Índia",
+    "airport": "AMD",
+    "city": "Sardar Vallabhbhai Patel",
+    "normalized_airport": "amd",
+    "normalized_city": "sardar vallabhbhai patel"
+  },
+  {
+    "country": "Índia",
+    "airport": "LDA",
+    "city": "Malda",
+    "normalized_airport": "lda",
+    "normalized_city": "malda"
+  },
+  {
+    "country": "Indonésia",
+    "airport": "CGK",
+    "city": "Jacarta",
+    "normalized_airport": "cgk",
+    "normalized_city": "jacarta"
+  },
+  {
+    "country": "Inglaterra",
+    "airport": "LPL",
+    "city": "Liverpool",
+    "normalized_airport": "lpl",
+    "normalized_city": "liverpool"
+  },
+  {
+    "country": "Inglaterra",
+    "airport": "LYX",
+    "city": "Londres",
+    "normalized_airport": "lyx",
+    "normalized_city": "londres"
+  },
+  {
+    "country": "Inglaterra",
+    "airport": "LHR",
+    "city": "Londres",
+    "normalized_airport": "lhr",
+    "normalized_city": "londres"
+  },
+  {
+    "country": "Inglaterra",
+    "airport": "MAN",
+    "city": "Manchester",
+    "normalized_airport": "man",
+    "normalized_city": "manchester"
+  },
+  {
+    "country": "Inglaterra",
+    "airport": "BHX",
+    "city": "Birmingham",
+    "normalized_airport": "bhx",
+    "normalized_city": "birmingham"
+  },
+  {
+    "country": "Inglaterra",
+    "airport": "LCY",
+    "city": "Londres",
+    "normalized_airport": "lcy",
+    "normalized_city": "londres"
+  },
+  {
+    "country": "Inglaterra",
+    "airport": "LGW",
+    "city": "Londres (Gatwick)",
+    "normalized_airport": "lgw",
+    "normalized_city": "londres (gatwick)"
+  },
+  {
+    "country": "Inglaterra",
+    "airport": "BBS",
+    "city": "Yateley",
+    "normalized_airport": "bbs",
+    "normalized_city": "yateley"
+  },
+  {
+    "country": "Irã",
+    "airport": "IKA",
+    "city": "Tehran",
+    "normalized_airport": "ika",
+    "normalized_city": "tehran"
+  },
+  {
+    "country": "Irã",
+    "airport": "THR",
+    "city": "Tehran",
+    "normalized_airport": "thr",
+    "normalized_city": "tehran"
+  },
+  {
+    "country": "Iraque",
+    "airport": "BGW",
+    "city": "Bagda",
+    "normalized_airport": "bgw",
+    "normalized_city": "bagda"
+  },
+  {
+    "country": "Iraque",
+    "airport": "EBL",
+    "city": "Erbil",
+    "normalized_airport": "ebl",
+    "normalized_city": "erbil"
+  },
+  {
+    "country": "Irlanda",
+    "airport": "DUB",
+    "city": "Dublin",
+    "normalized_airport": "dub",
+    "normalized_city": "dublin"
+  },
+  {
+    "country": "Irlanda",
+    "airport": "SNN",
+    "city": "Shannon",
+    "normalized_airport": "snn",
+    "normalized_city": "shannon"
+  },
+  {
+    "country": "Islândia",
+    "airport": "GRY",
+    "city": "Grímsey",
+    "normalized_airport": "gry",
+    "normalized_city": "grimsey"
+  },
+  {
+    "country": "Islândia",
+    "airport": "KEF",
+    "city": "Reykjavik",
+    "normalized_airport": "kef",
+    "normalized_city": "reykjavik"
+  },
+  {
+    "country": "Israel",
+    "airport": "TLV",
+    "city": "Tel Aviv",
+    "normalized_airport": "tlv",
+    "normalized_city": "tel aviv"
+  },
+  {
+    "country": "Itália",
+    "airport": "BRI",
+    "city": "Bari",
+    "normalized_airport": "bri",
+    "normalized_city": "bari"
+  },
+  {
+    "country": "Itália",
+    "airport": "BLQ",
+    "city": "Bolonha",
+    "normalized_airport": "blq",
+    "normalized_city": "bolonha"
+  },
+  {
+    "country": "Itália",
+    "airport": "FLR",
+    "city": "Florença",
+    "normalized_airport": "flr",
+    "normalized_city": "florenca"
+  },
+  {
+    "country": "Itália",
+    "airport": "LIN",
+    "city": "Milão",
+    "normalized_airport": "lin",
+    "normalized_city": "milao"
+  },
+  {
+    "country": "Itália",
+    "airport": "MXP",
+    "city": "Milão",
+    "normalized_airport": "mxp",
+    "normalized_city": "milao"
+  },
+  {
+    "country": "Itália",
+    "airport": "NAP",
+    "city": "Nápoles",
+    "normalized_airport": "nap",
+    "normalized_city": "napoles"
+  },
+  {
+    "country": "Itália",
+    "airport": "PSA",
+    "city": "Pisa",
+    "normalized_airport": "psa",
+    "normalized_city": "pisa"
+  },
+  {
+    "country": "Itália",
+    "airport": "FCO",
+    "city": "Roma",
+    "normalized_airport": "fco",
+    "normalized_city": "roma"
+  },
+  {
+    "country": "Itália",
+    "airport": "TRN",
+    "city": "Turin",
+    "normalized_airport": "trn",
+    "normalized_city": "turin"
+  },
+  {
+    "country": "Itália",
+    "airport": "VCE",
+    "city": "Veneza",
+    "normalized_airport": "vce",
+    "normalized_city": "veneza"
+  },
+  {
+    "country": "Itália",
+    "airport": "VRN",
+    "city": "Verona",
+    "normalized_airport": "vrn",
+    "normalized_city": "verona"
+  },
+  {
+    "country": "Itália",
+    "airport": "CTA",
+    "city": "Catania",
+    "normalized_airport": "cta",
+    "normalized_city": "catania"
+  },
+  {
+    "country": "Itália",
+    "airport": "PMO",
+    "city": "Palermo",
+    "normalized_airport": "pmo",
+    "normalized_city": "palermo"
+  },
+  {
+    "country": "Jamaica",
+    "airport": "KIN",
+    "city": "Kingston",
+    "normalized_airport": "kin",
+    "normalized_city": "kingston"
+  },
+  {
+    "country": "Japão",
+    "airport": "NGO",
+    "city": "Nagoya",
+    "normalized_airport": "ngo",
+    "normalized_city": "nagoya"
+  },
+  {
+    "country": "Japão",
+    "airport": "NRT",
+    "city": "Narita",
+    "normalized_airport": "nrt",
+    "normalized_city": "narita"
+  },
+  {
+    "country": "Japão",
+    "airport": "HND",
+    "city": "Tóquio",
+    "normalized_airport": "hnd",
+    "normalized_city": "toquio"
+  },
+  {
+    "country": "Japão",
+    "airport": "IHA",
+    "city": "Niihama",
+    "normalized_airport": "iha",
+    "normalized_city": "niihama"
+  },
+  {
+    "country": "Japão",
+    "airport": "CTS",
+    "city": "Chitose",
+    "normalized_airport": "cts",
+    "normalized_city": "chitose"
+  },
+  {
+    "country": "Japão",
+    "airport": "FUK",
+    "city": "Fukuoka",
+    "normalized_airport": "fuk",
+    "normalized_city": "fukuoka"
+  },
+  {
+    "country": "Japão",
+    "airport": "KIX",
+    "city": "Osaka",
+    "normalized_airport": "kix",
+    "normalized_city": "osaka"
+  },
+  {
+    "country": "Japão",
+    "airport": "KMQ",
+    "city": "Komatsu",
+    "normalized_airport": "kmq",
+    "normalized_city": "komatsu"
+  },
+  {
+    "country": "Jordânia",
+    "airport": "AMM",
+    "city": "Amman",
+    "normalized_airport": "amm",
+    "normalized_city": "amman"
+  },
+  {
+    "country": "Líbano",
+    "airport": "BEY",
+    "city": "Beirute",
+    "normalized_airport": "bey",
+    "normalized_city": "beirute"
+  },
+  {
+    "country": "Luxemburgo",
+    "airport": "LUX",
+    "city": "Luxemburgo",
+    "normalized_airport": "lux",
+    "normalized_city": "luxemburgo"
+  },
+  {
+    "country": "Malásia",
+    "airport": "KUL",
+    "city": "Kuala Lumpur",
+    "normalized_airport": "kul",
+    "normalized_city": "kuala lumpur"
+  },
+  {
+    "country": "Malta",
+    "airport": "MLA",
+    "city": "Malta",
+    "normalized_airport": "mla",
+    "normalized_city": "malta"
+  },
+  {
+    "country": "Marrocos",
+    "airport": "CAS",
+    "city": "Casablanca",
+    "normalized_airport": "cas",
+    "normalized_city": "casablanca"
+  },
+  {
+    "country": "Marrocos",
+    "airport": "CMN",
+    "city": "Casablanca",
+    "normalized_airport": "cmn",
+    "normalized_city": "casablanca"
+  },
+  {
+    "country": "Marrocos",
+    "airport": "RAK",
+    "city": "Marrakech",
+    "normalized_airport": "rak",
+    "normalized_city": "marrakech"
+  },
+  {
+    "country": "Mexico",
+    "airport": "HMO",
+    "city": "Hermosillo",
+    "normalized_airport": "hmo",
+    "normalized_city": "hermosillo"
+  },
+  {
+    "country": "México",
+    "airport": "ACA",
+    "city": "Acapulco",
+    "normalized_airport": "aca",
+    "normalized_city": "acapulco"
+  },
+  {
+    "country": "México",
+    "airport": "CUN",
+    "city": "Cancun",
+    "normalized_airport": "cun",
+    "normalized_city": "cancun"
+  },
+  {
+    "country": "México",
+    "airport": "MEX",
+    "city": "Cidade do México",
+    "normalized_airport": "mex",
+    "normalized_city": "cidade do mexico"
+  },
+  {
+    "country": "México",
+    "airport": "CJS",
+    "city": "Cidade Juarez",
+    "normalized_airport": "cjs",
+    "normalized_city": "cidade juarez"
+  },
+  {
+    "country": "México",
+    "airport": "GDL",
+    "city": "Guadalajara",
+    "normalized_airport": "gdl",
+    "normalized_city": "guadalajara"
+  },
+  {
+    "country": "México",
+    "airport": "LOM",
+    "city": "Lagos de Moreno",
+    "normalized_airport": "lom",
+    "normalized_city": "lagos de moreno"
+  },
+  {
+    "country": "México",
+    "airport": "BJX",
+    "city": "Léon",
+    "normalized_airport": "bjx",
+    "normalized_city": "leon"
+  },
+  {
+    "country": "México",
+    "airport": "MTY",
+    "city": "Monterrey",
+    "normalized_airport": "mty",
+    "normalized_city": "monterrey"
+  },
+  {
+    "country": "México",
+    "airport": "NLD",
+    "city": "Nuevo Laredo",
+    "normalized_airport": "nld",
+    "normalized_city": "nuevo laredo"
+  },
+  {
+    "country": "México",
+    "airport": "TRC",
+    "city": "Torreon",
+    "normalized_airport": "trc",
+    "normalized_city": "torreon"
+  },
+  {
+    "country": "Moçambique",
+    "airport": "MPM",
+    "city": "Maputo",
+    "normalized_airport": "mpm",
+    "normalized_city": "maputo"
+  },
+  {
+    "country": "Nicarágua",
+    "airport": "MGA",
+    "city": "Manágua",
+    "normalized_airport": "mga",
+    "normalized_city": "managua"
+  },
+  {
+    "country": "Noruega",
+    "airport": "OSL",
+    "city": "Oslo",
+    "normalized_airport": "osl",
+    "normalized_city": "oslo"
+  },
+  {
+    "country": "Noruega",
+    "airport": "SRP",
+    "city": "Stord",
+    "normalized_airport": "srp",
+    "normalized_city": "stord"
+  },
+  {
+    "country": "Noruega",
+    "airport": "ALF",
+    "city": "Alta",
+    "normalized_airport": "alf",
+    "normalized_city": "alta"
+  },
+  {
+    "country": "Noruega",
+    "airport": "BGO",
+    "city": "Bergen",
+    "normalized_airport": "bgo",
+    "normalized_city": "bergen"
+  },
+  {
+    "country": "Nova Zelândia",
+    "airport": "WLG",
+    "city": "Wellington",
+    "normalized_airport": "wlg",
+    "normalized_city": "wellington"
+  },
+  {
+    "country": "Nova Zelândia",
+    "airport": "AKL",
+    "city": "Auckland",
+    "normalized_airport": "akl",
+    "normalized_city": "auckland"
+  },
+  {
+    "country": "Nova Zelândia",
+    "airport": "DUD",
+    "city": "Dunedin",
+    "normalized_airport": "dud",
+    "normalized_city": "dunedin"
+  },
+  {
+    "country": "País de Gales",
+    "airport": "CWL",
+    "city": "Cardiff",
+    "normalized_airport": "cwl",
+    "normalized_city": "cardiff"
+  },
+  {
+    "country": "Países Baixos",
+    "airport": "AMS",
+    "city": "Amsterdam",
+    "normalized_airport": "ams",
+    "normalized_city": "amsterdam"
+  },
+  {
+    "country": "Países Baixos",
+    "airport": "RTM",
+    "city": "Rotterdam",
+    "normalized_airport": "rtm",
+    "normalized_city": "rotterdam"
+  },
+  {
+    "country": "Países Baixos",
+    "airport": "GRQ",
+    "city": "Groningen",
+    "normalized_airport": "grq",
+    "normalized_city": "groningen"
+  },
+  {
+    "country": "Panamá",
+    "airport": "PTY",
+    "city": "Cidade do Panamá",
+    "normalized_airport": "pty",
+    "normalized_city": "cidade do panama"
+  },
+  {
+    "country": "Papua New Guinea",
+    "airport": "RBP",
+    "city": "Rabaraba",
+    "normalized_airport": "rbp",
+    "normalized_city": "rabaraba"
+  },
+  {
+    "country": "Papua New Guinea",
+    "airport": "SDI",
+    "city": "Saidor",
+    "normalized_airport": "sdi",
+    "normalized_city": "saidor"
+  },
+  {
+    "country": "Papua New Guinea",
+    "airport": "GUR",
+    "city": "Alotau",
+    "normalized_airport": "gur",
+    "normalized_city": "alotau"
+  },
+  {
+    "country": "Paquistão",
+    "airport": "SDT",
+    "city": "Saidu Sharif",
+    "normalized_airport": "sdt",
+    "normalized_city": "saidu sharif"
+  },
+  {
+    "country": "Paraguai",
+    "airport": "ASU",
+    "city": "Assunção",
+    "normalized_airport": "asu",
+    "normalized_city": "assuncao"
+  },
+  {
+    "country": "Paraguai",
+    "airport": "AGT",
+    "city": "Cidade do Leste",
+    "normalized_airport": "agt",
+    "normalized_city": "cidade do leste"
+  },
+  {
+    "country": "Peru",
+    "airport": "CUZ",
+    "city": "Cuzco",
+    "normalized_airport": "cuz",
+    "normalized_city": "cuzco"
+  },
+  {
+    "country": "Peru",
+    "airport": "LIM",
+    "city": "Lima",
+    "normalized_airport": "lim",
+    "normalized_city": "lima"
+  },
+  {
+    "country": "Peru",
+    "airport": "AQP",
+    "city": "Arequipa",
+    "normalized_airport": "aqp",
+    "normalized_city": "arequipa"
+  },
+  {
+    "country": "Peru",
+    "airport": "TRU",
+    "city": "Trujillo",
+    "normalized_airport": "tru",
+    "normalized_city": "trujillo"
+  },
+  {
+    "country": "Polinésia Francesa",
+    "airport": "AAA",
+    "city": "Anaa",
+    "normalized_airport": "aaa",
+    "normalized_city": "anaa"
+  },
+  {
+    "country": "Polinésia Francesa",
+    "airport": "MAU",
+    "city": "Maupiti",
+    "normalized_airport": "mau",
+    "normalized_city": "maupiti"
+  },
+  {
+    "country": "Polônia",
+    "airport": "KRK",
+    "city": "Cracóvia",
+    "normalized_airport": "krk",
+    "normalized_city": "cracovia"
+  },
+  {
+    "country": "Polônia",
+    "airport": "WAW",
+    "city": "Varsóvia",
+    "normalized_airport": "waw",
+    "normalized_city": "varsovia"
+  },
+  {
+    "country": "Porto Rico",
+    "airport": "SJU",
+    "city": "San Juan",
+    "normalized_airport": "sju",
+    "normalized_city": "san juan"
+  },
+  {
+    "country": "Portugal",
+    "airport": "FNC",
+    "city": "Funchal",
+    "normalized_airport": "fnc",
+    "normalized_city": "funchal"
+  },
+  {
+    "country": "Portugal",
+    "airport": "LIS",
+    "city": "Lisboa",
+    "normalized_airport": "lis",
+    "normalized_city": "lisboa"
+  },
+  {
+    "country": "Portugal",
+    "airport": "OPO",
+    "city": "Porto",
+    "normalized_airport": "opo",
+    "normalized_city": "porto"
+  },
+  {
+    "country": "Quênia",
+    "airport": "KIS",
+    "city": "Kisumu",
+    "normalized_airport": "kis",
+    "normalized_city": "kisumu"
+  },
+  {
+    "country": "Quênia",
+    "airport": "NBO",
+    "city": "Nairóbi",
+    "normalized_airport": "nbo",
+    "normalized_city": "nairobi"
+  },
+  {
+    "country": "Reino Unido",
+    "airport": "LBA",
+    "city": "Leeds Bradford",
+    "normalized_airport": "lba",
+    "normalized_city": "leeds bradford"
+  },
+  {
+    "country": "Reino Unido",
+    "airport": "GLA",
+    "city": "Glasgow",
+    "normalized_airport": "gla",
+    "normalized_city": "glasgow"
+  },
+  {
+    "country": "Reino Unido",
+    "airport": "LTN",
+    "city": "Londres",
+    "normalized_airport": "ltn",
+    "normalized_city": "londres"
+  },
+  {
+    "country": "República Dominicana",
+    "airport": "SDQ",
+    "city": "Santo Domingo",
+    "normalized_airport": "sdq",
+    "normalized_city": "santo domingo"
+  },
+  {
+    "country": "República Dominicana",
+    "airport": "PUJ",
+    "city": "Punta Cana",
+    "normalized_airport": "puj",
+    "normalized_city": "punta cana"
+  },
+  {
+    "country": "República Tcheca",
+    "airport": "PRG",
+    "city": "Praga",
+    "normalized_airport": "prg",
+    "normalized_city": "praga"
+  },
+  {
+    "country": "Rússia",
+    "airport": "DME",
+    "city": "Moscou",
+    "normalized_airport": "dme",
+    "normalized_city": "moscou"
+  },
+  {
+    "country": "Rússia",
+    "airport": "MOW",
+    "city": "Moscou",
+    "normalized_airport": "mow",
+    "normalized_city": "moscou"
+  },
+  {
+    "country": "Rússia",
+    "airport": "VKO",
+    "city": "Moscou",
+    "normalized_airport": "vko",
+    "normalized_city": "moscou"
+  },
+  {
+    "country": "Rússia",
+    "airport": "LED",
+    "city": "São Petersburgo",
+    "normalized_airport": "led",
+    "normalized_city": "sao petersburgo"
+  },
+  {
+    "country": "Rússia",
+    "airport": "SVO",
+    "city": "Moscou",
+    "normalized_airport": "svo",
+    "normalized_city": "moscou"
+  },
+  {
+    "country": "Singapura",
+    "airport": "SIN",
+    "city": "Singapura",
+    "normalized_airport": "sin",
+    "normalized_city": "singapura"
+  },
+  {
+    "country": "Suécia",
+    "airport": "ARN",
+    "city": "Estocolmo",
+    "normalized_airport": "arn",
+    "normalized_city": "estocolmo"
+  },
+  {
+    "country": "Suécia",
+    "airport": "GOT",
+    "city": "Gothenburg",
+    "normalized_airport": "got",
+    "normalized_city": "gothenburg"
+  },
+  {
+    "country": "Suécia",
+    "airport": "LPI",
+    "city": "Linkoping",
+    "normalized_airport": "lpi",
+    "normalized_city": "linkoping"
+  },
+  {
+    "country": "Suíça",
+    "airport": "GVA",
+    "city": "Genebra",
+    "normalized_airport": "gva",
+    "normalized_city": "genebra"
+  },
+  {
+    "country": "Suíça",
+    "airport": "ZRH",
+    "city": "Zurique",
+    "normalized_airport": "zrh",
+    "normalized_city": "zurique"
+  },
+  {
+    "country": "Tailândia",
+    "airport": "BKK",
+    "city": "Bangkok",
+    "normalized_airport": "bkk",
+    "normalized_city": "bangkok"
+  },
+  {
+    "country": "Taiwan",
+    "airport": "TPE",
+    "city": "Taipei",
+    "normalized_airport": "tpe",
+    "normalized_city": "taipei"
+  },
+  {
+    "country": "Tunísia",
+    "airport": "TUN",
+    "city": "Tunis",
+    "normalized_airport": "tun",
+    "normalized_city": "tunis"
+  },
+  {
+    "country": "Turquia",
+    "airport": "ADA",
+    "city": "Adana",
+    "normalized_airport": "ada",
+    "normalized_city": "adana"
+  },
+  {
+    "country": "Turquia",
+    "airport": "IST",
+    "city": "Istambul",
+    "normalized_airport": "ist",
+    "normalized_city": "istambul"
+  },
+  {
+    "country": "Turquia",
+    "airport": "ESB",
+    "city": "Ancara",
+    "normalized_airport": "esb",
+    "normalized_city": "ancara"
+  },
+  {
+    "country": "Ucrania",
+    "airport": "TNL",
+    "city": "Ternopil",
+    "normalized_airport": "tnl",
+    "normalized_city": "ternopil"
+  },
+  {
+    "country": "Uruguai",
+    "airport": "PDP",
+    "city": "Maldonado",
+    "normalized_airport": "pdp",
+    "normalized_city": "maldonado"
+  },
+  {
+    "country": "Uruguai",
+    "airport": "MVD",
+    "city": "Montevideo",
+    "normalized_airport": "mvd",
+    "normalized_city": "montevideo"
+  },
+  {
+    "country": "Venezuela",
+    "airport": "CCS",
+    "city": "Caracas",
+    "normalized_airport": "ccs",
+    "normalized_city": "caracas"
+  },
+  {
+    "country": "Venezuela",
+    "airport": "LAG",
+    "city": "La Guaira",
+    "normalized_airport": "lag",
+    "normalized_city": "la guaira"
+  },
+  {
+    "country": "Venezuela",
+    "airport": "GTC",
+    "city": "Green Turtle",
+    "normalized_airport": "gtc",
+    "normalized_city": "green turtle"
+  },
+  {
+    "country": "Vietnã",
+    "airport": "HAN",
+    "city": "Hanoi",
+    "normalized_airport": "han",
+    "normalized_city": "hanoi"
+  },
+  {
+    "country": "Vietnã",
+    "airport": "HUI",
+    "city": "Hue",
+    "normalized_airport": "hui",
+    "normalized_city": "hue"
+  }
+]

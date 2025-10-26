@@ -1,0 +1,56 @@
+:root{
+  --max-width: 900px;
+  --accent: #2b6cb0;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;margin:0;background:#f7f9fc;color:#222}
+.container{max-width:var(--max-width);margin:28px auto;padding:22px;background:#fff;border-radius:8px;box-shadow:0 6px 18px rgba(20,30,40,.06)}
+h1,h2{margin:0 0 12px}
+form .row{display:flex;flex-direction:column;margin-bottom:12px}
+label{font-weight:600;margin-bottom:6px}
+input[type=text],input[type=number],select{padding:10px;border:1px solid #dfe6ef;border-radius:6px}
+/* Seção de voo: layout mais organizado e responsivo */
+#airSection{display:block;padding:14px;background:#fbfdff;border-radius:6px}
+.air-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.air-grid .row{margin-bottom:0}
+/* cada coluna (origem/destino/controles) empilha seus elementos verticalmente */
+.air-inline{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.air-inline label{margin-bottom:0;font-weight:600}
+.air-selects { display:flex; flex-direction:column; gap:8px; width:100%; }
+.air-selects .row { display:flex; flex-direction:column; gap:6px; align-items:flex-start; width:100%; }
+.small-label { font-weight:600; margin-bottom:4px; }
+.small-input{padding:8px;border:1px solid #dfe6ef;border-radius:6px;min-width:0;width:100%}
+textarea{padding:8px;border:1px solid #dfe6ef;border-radius:6px;min-height:56px}
+.post-flight-row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+/* Default: compact stacked rows for small screens */
+.post-flight-row .row{display:flex;flex-direction:column;gap:6px;min-width:140px;margin-bottom:0}
+.post-flight-row .row label{margin-bottom:4px}
+.post-flight-row .row input,.post-flight-row .row select{min-width:0}
+.small-input{padding:8px;border:1px solid #dfe6ef;border-radius:6px}
+
+.airport-suggestions { font-family: inherit; font-size: 14px; }
+.airport-suggestion:hover { background: #f0f0f0; }
+.connections-list .connections-list-row{display:flex;flex-direction:column;gap:8px;margin-bottom:10px;padding:8px;border-radius:6px;background:#fff}
+.connections-list .connections-list-row label{font-weight:600}
+.connections-list .connections-list-row .air-selects{padding:0}
+.buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+button{background:var(--accent);color:#fff;padding:8px 12px;border:0;border-radius:6px;cursor:pointer}
+button#clearForm,button#clearStorage{background:#718096}
+button:active{transform:translateY(1px)}
+.table-wrap{overflow:auto;margin-top:12px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px;border-bottom:1px solid #eef3fa;text-align:left}
+th{background:#f1f6fb}
+@media(min-width:700px){
+  form .row{flex-direction:row;align-items:center}
+  label{width:220px;margin-bottom:0}
+  input,select{flex:1}
+  /* tornar a grade de voo em três colunas: Origem | Destino | Controles */
+  #airSection .air-grid{grid-template-columns:1fr 1fr 320px}
+  /* garantir que selects pequenos ocupem largura total dentro das colunas */
+  .air-selects .row{flex-direction:column}
+  /* In desktop, lay out post-flight fields inline for compactness */
+  .post-flight-row .row{flex-direction:row;align-items:center;gap:10px;min-width:0}
+  .post-flight-row .row label{width:auto;min-width:70px;margin-bottom:0}
+  .post-flight-row .row input,.post-flight-row .row select{flex:1;min-width:80px}
+}

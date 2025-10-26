@@ -1,0 +1,120 @@
+[
+  {
+    "entry": {
+      "origin": "A",
+      "destination": "B",
+      "distance": 10,
+      "transport": "Automóvel",
+      "fuel": "Gasolina Automotiva (pura)",
+      "efficiency_km_per_l": 12
+    },
+    "co2_kg_per_l": 100.0,
+    "ch4_kg_per_l": 0.0,
+    "n2o_kg_per_l": 0.0,
+    "liters_consumed": 0.8333333333333333,
+    "total_co2_kg": 83.33333333333333,
+    "total_ch4_kg": 0.0,
+    "total_n2o_kg": 0.0,
+    "consumption_l_per_km_used": 0.08333333333333333,
+    "used_default_consumption": false
+  },
+  {
+    "entry": {
+      "origin": "C",
+      "destination": "D",
+      "distance": 50,
+      "transport": "Ônibus",
+      "fuel": "Óleo Diesel (puro)",
+      "efficiency_km_per_l": 4
+    },
+    "co2_kg_per_km": 3.1,
+    "ch4_kg_per_km": 0.0,
+    "n2o_kg_per_km": 0.0,
+    "total_co2_kg": 155.0,
+    "total_ch4_kg": 0.0,
+    "total_n2o_kg": 0.0
+  },
+  {
+    "entry": {
+      "origin": "E",
+      "destination": "F",
+      "distance": 100,
+      "transport": "Eletricidade",
+      "fuel": "Eletricidade",
+      "efficiency_km_per_l": 0
+    },
+    "error": "no factor available for fuel \"Eletricidade\""
+  },
+  {
+    "entry": {
+      "origin": "jijijij",
+      "destination": "okook",
+      "distance": "10",
+      "transport": "Automovel",
+      "fuel": "Gasolina Automotiva (comercial)",
+      "vehicleSubtype": "Flex",
+      "year": "2020",
+      "balsaType": "",
+      "tipo_frota_de_veiculos": "Automóvel flex a gasolina"
+    },
+    "co2_kg_per_l": 100.0,
+    "ch4_kg_per_l": 0.0,
+    "n2o_kg_per_l": 0.0,
+    "liters_consumed": 0.8333333333333333,
+    "total_co2_kg": 83.33333333333333,
+    "total_ch4_kg": 0.0,
+    "total_n2o_kg": 0.0,
+    "consumption_l_per_km_used": 0.08333333333333333,
+    "used_default_consumption": true,
+    "notes": [
+      "default_efficiency_km_per_l_used=12.0"
+    ]
+  },
+  {
+    "entry": {
+      "origin": "ihuhuih",
+      "destination": "hihiuh",
+      "distance": "60",
+      "transport": "Automovel",
+      "fuel": "Gasolina Automotiva (comercial)",
+      "vehicleSubtype": "Flex",
+      "year": "2015",
+      "balsaType": "",
+      "tipo_frota_de_veiculos": "Automóvel flex a gasolina"
+    },
+    "co2_kg_per_l": 100.0,
+    "ch4_kg_per_l": 0.0,
+    "n2o_kg_per_l": 0.0,
+    "liters_consumed": 5.0,
+    "total_co2_kg": 500.0,
+    "total_ch4_kg": 0.0,
+    "total_n2o_kg": 0.0,
+    "consumption_l_per_km_used": 0.08333333333333333,
+    "used_default_consumption": true,
+    "notes": [
+      "default_efficiency_km_per_l_used=12.0"
+    ]
+  },
+  {
+    "entry": {
+      "origin": "Rua 1",
+      "destination": "Rua 2",
+      "distance": "50",
+      "transport": "Automovel",
+      "fuel": "Gasolina Automotiva (comercial)",
+      "vehicleSubtype": "Flex",
+      "year": "2015",
+      "balsaType": "",
+      "tipo_frota_de_veiculos": "Automóvel flex a gasolina"
+    },
+    "co2_kg_per_l": 100.0,
+    "ch4_kg_per_l": 0.0,
+    "n2o_kg_per_l": 0.0,
+    "liters_consumed": 4.166666666666666,
+    "total_co2_kg": 416.66666666666663,
+    "total_ch4_kg": 0.0,
+    "total_n2o_kg": 0.0,
+    "consumption_l_per_km_used": 0.08333333333333333,
+    "used_default_consumption": true
+  }
+]

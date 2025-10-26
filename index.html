@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Formulário de Deslocamento</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <h1>Formulário de Deslocamento</h1>
+
+      <form id="tripForm">
+        <div class="row">
+          <label for="transport">Meio de transporte</label>
+          <select id="transport" name="transport" required>
+            <option value="">-- selecione --</option>
+            <option>Automovel</option>
+            <option>Aéreo</option>
+            <!-- <option>Carro de aplicativo/taxi</option> -->
+            <option>Motocicleta</option>
+            <option>Ônibus Municipal</option>
+            <option>Ônibus Intermunicipal</option>
+            <option>Balsa</option>
+            <option>Bicicleta</option>
+            <option>Caminhando</option>
+          </select>
+        </div>
+
+        <div class="row" id="originRow">
+          <label for="origin">Endereço de Origem</label>
+          <input id="origin" name="origin" type="text" placeholder="Rua, número, cidade" required />
+        </div>
+
+        <div class="row" id="destinationRow">
+          <label for="destination">Endereço de Destino</label>
+          <input id="destination" name="destination" type="text" placeholder="Rua, número, cidade" required />
+        </div>
+
+        <div class="row" id="distanceRow">
+          <label for="distance">Distância percorrida (km)</label>
+          <input id="distance" name="distance" type="number" min="0" step="0.1" placeholder="Ex: 12.5" required />
+        </div>
+
+        <!-- Seção específica para transporte aéreo -->
+        <div class="row conditional" id="airSection" style="display:none; margin-top:0.5rem;">
+          <h3 style="margin:0 0 0.5rem 0; font-size:1rem;">Informações do voo</h3>
+          <div class="air-grid">
+            <div class="air-inline">
+              <label>Origem</label>
+              <div class="air-selects">
+                <div class="row"><label class="small-label">País</label><select id="dep_country" class="small-input" aria-label="País de origem"></select></div>
+                
+                <div class="row"><label class="small-label">Município</label><select id="dep_city" class="small-input" aria-label="Município de origem"></select></div>
+                <div class="row"><label class="small-label">Aeroporto</label><select id="dep_airport" class="small-input" aria-label="Aeroporto de origem"></select></div>
+              </div>
+            </div>
+            <div class="air-inline">
+              <label>Destino</label>
+              <div class="air-selects">
+                <div class="row"><label class="small-label">País</label><select id="arr_country" class="small-input" aria-label="País de destino"></select></div>
+                
+                <div class="row"><label class="small-label">Município</label><select id="arr_city" class="small-input" aria-label="Município de destino"></select></div>
+                <div class="row"><label class="small-label">Aeroporto</label><select id="arr_airport" class="small-input" aria-label="Aeroporto de destino"></select></div>
+              </div>
+            </div>
+            <div class="air-inline">
+              <label for="hadConnections">Teve conexão?</label>
+              <input id="hadConnections" name="hadConnections" type="checkbox" />
+            </div>
+            <div style="grid-column:1/-1;">
+              <div id="connectionsRow" class="row conditional" style="display:none;">
+                <label for="connectionsCount">Número de conexões</label>
+                <select id="connectionsCount" name="connectionsCount">
+                  <option value="">-- selecione --</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                </select>
+                <div id="connectionsList" style="margin-top:8px;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:0.5rem;">
+            <div class="air-inline">
+              <label for="usedAfterFlight">Usou transporte após o voo?</label>
+              <input id="usedAfterFlight" name="usedAfterFlight" type="checkbox" />
+            </div>
+          </div>
+
+          <div id="postFlightSection" class="conditional" style="display:none; margin-top:0.5rem; padding-top:0.5rem; border-top:1px dashed #ddd;">
+            <h4 style="margin:0 0 0.5rem 0; font-size:0.95rem;">Transporte após o voo</h4>
+            <div class="post-flight-row">
+              <div class="row">
+                <label for="post_transport">Meio</label>
+                <select id="post_transport" name="post_transport">
+                  <option value="">-- selecione --</option>
+                  <option>Automovel</option>
+                  <option>Motocicleta</option>
+                  <option>Ônibus Municipal</option>
+                  <option>Ônibus Intermunicipal</option>
+                  <option>Balsa</option>
+                  <option>Bicicleta</option>
+                  <option>Caminhando</option>
+                </select>
+              </div>
+              <div class="row conditional" id="post_fuelRow" style="display:none;">
+                <label for="post_fuel">Combustível</label>
+                <select id="post_fuel" name="post_fuel">
+                  <option value="">-- selecione --</option>
+                  <option>Gasolina Automotiva (comercial)</option>
+                  <option>Biometano</option>
+                  <option>Gás Natural Veicular (GNV)</option>
+                  <option>Etanol Hidratado</option>
+                  <option>Óleo Diesel (comercial)</option>
+                  <option>Elétrico</option>
+                </select>
+              </div>
+              <div class="row conditional" id="post_yearRow" style="display:none;">
+                <label for="post_year">Ano</label>
+                <input id="post_year" name="post_year" type="number" min="1900" max="2100" placeholder="Ex: 2018" />
+              </div>
+              <div class="row">
+                <label for="post_distance">Km</label>
+                <input id="post_distance" name="post_distance" type="number" min="0" step="0.1" placeholder="Ex: 12.5" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row conditional" id="vehicleSubtypeRow" style="display:none;">
+          <label for="vehicleSubtype">Subtipo do veículo</label>
+          <select id="vehicleSubtype" name="vehicleSubtype">
+            <option value="">-- selecione --</option>
+          </select>
+        </div>
+
+
+
+
+
+
+        <div class="row conditional" id="fuelRow" style="display:none;">
+          <label for="fuel">Tipo de combustível</label>
+          <select id="fuel" name="fuel">
+            <option value="">-- selecione --</option>
+            <option>Gasolina Automotiva (comercial)</option>
+            <option>Biometano</option>
+            <option>Gás Natural Veicular (GNV)</option>
+            <option>Etanol Hidratado</option>
+            <option>Óleo Diesel (comercial)</option>
+            <option>Elétrico</option>            
+          </select>
+        </div>
+
+        <div class="row conditional" id="yearRow" style="display:none;">
+          <label for="year">Ano do veículo</label>
+          <input id="year" name="year" type="number" min="1900" max="2100" placeholder="Ex: 2018" />
+        </div>
+
+        <div class="row conditional" id="balsaTypeRow" style="display:none;">
+          <label for="balsaType">Tipo de Balsa</label>
+          <select id="balsaType" name="balsaType">
+            <option value="">-- selecione --</option>
+            <option>Balsa de passageiros</option>
+            <option>Balsa de veículos</option>
+            <option>Balsa híbrida veículos e passageiros</option>
+          </select>
+        </div>
+
+        <div class="buttons">
+          <button type="submit">Salvar</button>
+          <button type="button" id="clearForm">Limpar formulário</button>
+          <button type="button" id="exportCsv">Exportar CSV</button>
+          <button type="button" id="clearStorage">Limpar todos os dados</button>
+        </div>
+        
+          <!-- Resultado do cálculo será exibido aqui -->
+          <div id="calcResult" class="calculation-result" aria-live="polite" style="margin-top:1rem; padding:0.75rem; border-radius:6px; background:#f8f9fa; display:none;"></div>
+      </form>
+
+      <section>
+        <h2>Entradas salvas</h2>
+        <div class="table-wrap">
+          <table id="entriesTable">
+            <thead>
+              <tr>
+                <th>Origem</th>
+                <th>Destino</th>
+                <th>Km</th>
+                <th>Tipo da frota de Veiculos</th>
+                <th>Subtipo do veículo</th>
+                <th>Tipo de Balsa</th>
+                <th>Transporte</th>
+                <th>Combustível</th>
+                <th>Ano</th>
+                <th>Decolagem</th>
+                <th>Aterrissagem</th>
+                <th>Conexões</th>
+                <th>Pós-voo (meio)</th>
+                <th>Pós-voo (km)</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- linhas geradas por JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
