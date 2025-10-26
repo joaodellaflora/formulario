@@ -121,9 +121,12 @@ def add_entry():
     origin = payload.get('origin', '').strip()
     destination = payload.get('destination', '').strip()
     distance = payload.get('distance', '')
-    transport = payload.get('transport', '')
-    if not origin or not destination or distance == '':
-        return jsonify({'error': 'missing fields'}), 400
+    transport = (payload.get('transport') or '').strip()
+    # For non-air transport, require origin/destination/distance.
+    # For 'Aéreo', these can be optional because flight details are provided separately.
+    if transport != 'Aéreo':
+        if not origin or not destination or distance == '':
+            return jsonify({'error': 'missing fields'}), 400
     entry = payload.copy()
     entry['createdAt'] = datetime.utcnow().isoformat() + 'Z'
     data = load_data()
