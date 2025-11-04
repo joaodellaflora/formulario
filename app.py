@@ -5,6 +5,11 @@ from datetime import datetime
 from functools import lru_cache
 import urllib.request
 import urllib.parse
+import uuid
+import csv
+
+# CSV file to persist flattened entries (one row per transport segment)
+CSV_FILE = 'data.csv'
 
 AIRPORTS_FILE = 'data/airports.json'
 AIRPORT_COORDS_FILE = 'data/airport_coords.json'
@@ -255,11 +260,76 @@ def add_entry():
         if not origin or not destination or distance == '':
             print('add_entry: missing fields:', {'origin': origin, 'destination': destination, 'distance': distance, 'transport': transport})
             return jsonify({'error': 'missing fields'}), 400
+    # generate unique id for this submission
     entry = payload.copy()
+    entry_id = uuid.uuid4().hex
+    entry['id'] = entry_id
     entry['createdAt'] = datetime.utcnow().isoformat() + 'Z'
+
+    # persist to JSON store
     data = load_data()
     data.append(entry)
     save_data(data)
+
+    # also persist to CSV as one row per transport segment
+    try:
+        def _segment_rows(base_entry):
+            # yield dicts representing rows to write for CSV
+            # main segment
+            main = {
+                'id': base_entry.get('id'),
+                'createdAt': base_entry.get('createdAt'),
+                'segment': 'main',
+                'origin': base_entry.get('origin', ''),
+                'destination': base_entry.get('destination', ''),
+                'transport': base_entry.get('transport', ''),
+                'distance': base_entry.get('distance', ''),
+                'fuel': base_entry.get('fuel', ''),
+                'year': base_entry.get('year', ''),
+                'vehicleSubtype': base_entry.get('vehicleSubtype', ''),
+                'notes': base_entry.get('notes', '')
+            }
+            yield main
+            # look for post-transport fields (postFlight, postTrain, postMetro, etc.)
+            for k, v in list(base_entry.items()):
+                if isinstance(k, str) and k.startswith('post') and isinstance(v, dict):
+                    seg = {
+                        'id': base_entry.get('id'),
+                        'createdAt': base_entry.get('createdAt'),
+                        'segment': k,
+                        'origin': v.get('origin', base_entry.get('origin', '')),
+                        'destination': v.get('destination', base_entry.get('destination', '')),
+                        'transport': v.get('transport', '') or k,
+                        'distance': v.get('distance', ''),
+                        'fuel': v.get('fuel', ''),
+                        'year': v.get('year', ''),
+                        'vehicleSubtype': v.get('vehicleSubtype', ''),
+                        'notes': v.get('notes', '')
+                    }
+                    yield seg
+
+        write_header = not os.path.exists(CSV_FILE)
+        # ensure directory exists
+        csv_dir = os.path.dirname(CSV_FILE) or '.'
+        os.makedirs(csv_dir, exist_ok=True)
+        with open(CSV_FILE, 'a', newline='', encoding='utf-8') as cf:
+            fieldnames = ['id', 'createdAt', 'segment', 'origin', 'destination', 'transport', 'distance', 'fuel', 'year', 'vehicleSubtype', 'notes']
+            writer = csv.DictWriter(cf, fieldnames=fieldnames)
+            if write_header:
+                writer.writeheader()
+            for row in _segment_rows(entry):
+                # normalize distance to string for CSV
+                if row.get('distance') is None:
+                    row['distance'] = ''
+                writer.writerow({k: ('' if v is None else v) for k, v in row.items()})
+    except Exception:
+        # best effort: do not fail the API if CSV write fails
+        try:
+            import traceback
+            print('failed to write CSV:', traceback.format_exc())
+        except Exception:
+            pass
+
     return jsonify(entry)
 
 
