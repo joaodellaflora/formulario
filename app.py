@@ -3,8 +3,11 @@ import json
 import os
 from datetime import datetime
 from functools import lru_cache
+import urllib.request
+import urllib.parse
 
 AIRPORTS_FILE = 'data/airports.json'
+AIRPORT_COORDS_FILE = 'data/airport_coords.json'
 
 app = Flask(__name__, static_folder='.', static_url_path='')
 
@@ -40,6 +43,35 @@ def load_airports():
             return json.load(f)
     except Exception:
         return []
+
+
+@lru_cache(maxsize=1)
+def load_airport_coords():
+    if not os.path.exists(AIRPORT_COORDS_FILE):
+        return {}
+    try:
+        with open(AIRPORT_COORDS_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def save_airport_coords(d: dict):
+    try:
+        # ensure directory exists
+        dirn = os.path.dirname(AIRPORT_COORDS_FILE)
+        if dirn and not os.path.exists(dirn):
+            os.makedirs(dirn, exist_ok=True)
+        with open(AIRPORT_COORDS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(d, f, ensure_ascii=False, indent=2)
+        # clear cached loader so subsequent calls read the new file
+        try:
+            load_airport_coords.cache_clear()
+        except Exception:
+            pass
+        return True
+    except Exception:
+        return False
 
 
 def normalize_for_search(s: str):
@@ -110,6 +142,55 @@ def api_airports_list():
     return jsonify(res)
 
 
+@app.route('/api/coords', methods=['GET'])
+def api_coords():
+    iata = (request.args.get('iata') or '').strip().upper()
+    if not iata:
+        return jsonify({'error': 'missing iata parameter'}), 400
+    coords = load_airport_coords()
+    v = coords.get(iata)
+    if not v:
+        # fallback: try to resolve from airports list (city/country/name) using Nominatim
+        airports = load_airports()
+        candidate = None
+        for a in airports:
+            if (a.get('airport') or '').strip().upper() == iata:
+                candidate = a
+                break
+        if candidate:
+            # build query using airport name, city and country
+            qparts = []
+            if candidate.get('airport'):
+                qparts.append(candidate.get('airport'))
+            if candidate.get('city'):
+                qparts.append(candidate.get('city'))
+            if candidate.get('country'):
+                qparts.append(candidate.get('country'))
+            q = ' '.join(qparts).strip()
+            if q:
+                try:
+                    params = urllib.parse.urlencode({'q': q, 'format': 'json', 'limit': 1})
+                    url = f'https://nominatim.openstreetmap.org/search?{params}'
+                    req = urllib.request.Request(url, headers={'User-Agent': 'AutomatizacaoEmissao/1.0 (+https://example.org)'} )
+                    with urllib.request.urlopen(req, timeout=10) as resp:
+                        raw = resp.read().decode('utf-8')
+                        arr = json.loads(raw or '[]')
+                        if arr and isinstance(arr, list):
+                            first = arr[0]
+                            lat = float(first.get('lat'))
+                            lon = float(first.get('lon'))
+                            # persist into coords and return
+                            newcoords = dict(coords)
+                            newcoords[iata] = {'lat': lat, 'lon': lon}
+                            save_airport_coords(newcoords)
+                            return jsonify(newcoords[iata])
+                except Exception:
+                    # network / parse error — fall through to not found
+                    pass
+        return jsonify({'error': 'not found'}), 404
+    return jsonify(v)
+
+
 @app.route('/api/entries', methods=['GET'])
 def get_entries():
     return jsonify(load_data())
@@ -117,15 +198,62 @@ def get_entries():
 
 @app.route('/api/entries', methods=['POST'])
 def add_entry():
-    payload = request.get_json() or {}
+    # Debug: log content-type and raw body to help diagnose client POST issues
+    try:
+        raw = request.get_data(as_text=True)
+    except Exception:
+        raw = None
+    print('add_entry: content-type=', getattr(request, 'content_type', None))
+    if raw is not None:
+        # print only the first 2000 chars to avoid huge logs
+        print('add_entry: raw body (truncated 2000):', raw[:2000])
+    try:
+        if raw:
+            payload = json.loads(raw)
+        else:
+            payload = request.get_json() or {}
+    except Exception as e:
+        print('add_entry: error parsing JSON:', e)
+        return jsonify({'error': 'invalid json'}), 400
+    import unicodedata
     origin = payload.get('origin', '').strip()
     destination = payload.get('destination', '').strip()
     distance = payload.get('distance', '')
     transport = (payload.get('transport') or '').strip()
-    # For non-air transport, require origin/destination/distance.
-    # For 'Aéreo', these can be optional because flight details are provided separately.
-    if transport != 'Aéreo':
+    # normalize transport for robust comparisons (remove diacritics, lower-case)
+    transport_norm = unicodedata.normalize('NFKD', transport).encode('ascii', 'ignore').decode('ascii').strip().lower()
+    print('add_entry: transport_norm=', transport_norm)
+    print('add_entry: payload=', payload)
+    # server-side fallback: if main distance is missing, try to read distance
+    # from any post-transport fields (postFlight, postTrain, postMetro).
+    if distance == '' or distance is None:
+        for k in ('postFlight', 'postTrain', 'postMetro'):
+            pd = payload.get(k)
+            if pd and isinstance(pd, dict):
+                d2 = pd.get('distance')
+                if d2 not in (None, ''):
+                    distance = d2
+                    # also copy into payload so subsequent logic and saved entry include it
+                    try:
+                        payload['distance'] = distance
+                    except Exception:
+                        pass
+                    print(f"add_entry: populated distance from {k}: {distance}")
+                    break
+    # Validation rules:
+    # - 'Aéreo' : origin/destination/distance may be omitted (flight object used instead)
+    # - 'Trem'  : origin/destination may be omitted, but distance is required
+    # - Others  : require origin, destination and distance
+    if transport_norm == 'aereo' or transport.lower() == 'aéreo':
+        # no-op: flight details expected instead
+        pass
+    elif transport_norm == 'trem' or transport_norm == 'metro':
+        if distance == '' or distance is None:
+            print('add_entry: missing distance for Trem/Metro:', {'distance': distance, 'transport': transport})
+            return jsonify({'error': 'missing fields'}), 400
+    else:
         if not origin or not destination or distance == '':
+            print('add_entry: missing fields:', {'origin': origin, 'destination': destination, 'distance': distance, 'transport': transport})
             return jsonify({'error': 'missing fields'}), 400
     entry = payload.copy()
     entry['createdAt'] = datetime.utcnow().isoformat() + 'Z'

@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+logs/
+.vscode/
+.idea/
+*.egg-info/
+dist/
+build/
+# Editor temporary files
+~$*
+*.swp
+*.swo
+# OS files
+Thumbs.db
+.DS_Store
+
+# Python virtual env
+venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# local data caches
+data/airport_coords.json

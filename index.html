@@ -16,6 +16,8 @@
           <select id="transport" name="transport" required>
             <option value="">-- selecione --</option>
             <option>Automovel</option>
+              <option>Trem</option>
+              <option>Metro</option>
             <option>Aéreo</option>
             <!-- <option>Carro de aplicativo/taxi</option> -->
             <option>Motocicleta</option>
@@ -130,6 +132,105 @@
               </div>
             </div>
           </div>
+
+        <!-- Seção específica para transporte Trem -->
+        <div class="row conditional" id="trainSection" style="display:none; margin-top:0.5rem;">
+          <h3 style="margin:0 0 0.5rem 0; font-size:1rem;">Informações do Trem</h3>
+          <div style="margin-top:0.5rem;">
+            <div class="air-inline">
+              <label for="usedAfterTrain">Usou transporte após o trem?</label>
+              <input id="usedAfterTrain" name="usedAfterTrain" type="checkbox" />
+            </div>
+          </div>
+
+          <div id="postTrainSection" class="conditional" style="display:none; margin-top:0.5rem; padding-top:0.5rem; border-top:1px dashed #ddd;">
+            <h4 style="margin:0 0 0.5rem 0; font-size:0.95rem;">Transporte após o trem</h4>
+            <div class="post-flight-row">
+              <div class="row">
+                <label for="post_transport_train">Meio</label>
+                <select id="post_transport_train" name="post_transport_train">
+                  <option value="">-- selecione --</option>
+                  <option>Automovel</option>
+                  <option>Motocicleta</option>
+                  <option>Ônibus Municipal</option>
+                  <option>Ônibus Intermunicipal</option>
+                  <option>Balsa</option>
+                  <option>Bicicleta</option>
+                  <option>Caminhando</option>
+                </select>
+              </div>
+              <div class="row conditional" id="post_fuelTrainRow" style="display:none;">
+                <label for="post_fuel_train">Combustível</label>
+                <select id="post_fuel_train" name="post_fuel_train">
+                  <option value="">-- selecione --</option>
+                  <option>Gasolina Automotiva (comercial)</option>
+                  <option>Biometano</option>
+                  <option>Gás Natural Veicular (GNV)</option>
+                  <option>Etanol Hidratado</option>
+                  <option>Óleo Diesel (comercial)</option>
+                  <option>Elétrico</option>
+                </select>
+              </div>
+              <div class="row conditional" id="post_yearTrainRow" style="display:none;">
+                <label for="post_year_train">Ano</label>
+                <input id="post_year_train" name="post_year_train" type="number" min="1900" max="2100" placeholder="Ex: 2018" />
+              </div>
+              <div class="row">
+                <label for="post_distance_train">Km</label>
+                <input id="post_distance_train" name="post_distance_train" type="number" min="0" step="0.1" placeholder="Ex: 12.5" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Seção específica para transporte Metro -->
+        <div class="row conditional" id="metroSection" style="display:none; margin-top:0.5rem;">
+          <h3 style="margin:0 0 0.5rem 0; font-size:1rem;">Informações do Metro</h3>
+          <div style="margin-top:0.5rem;">
+            <div class="air-inline">
+              <label for="usedAfterMetro">Usou transporte após o metro?</label>
+              <input id="usedAfterMetro" name="usedAfterMetro" type="checkbox" />
+            </div>
+          </div>
+
+          <div id="postMetroSection" class="conditional" style="display:none; margin-top:0.5rem; padding-top:0.5rem; border-top:1px dashed #ddd;">
+            <h4 style="margin:0 0 0.5rem 0; font-size:0.95rem;">Transporte após o metro</h4>
+            <div class="post-flight-row">
+              <div class="row">
+                <label for="post_transport_metro">Meio</label>
+                <select id="post_transport_metro" name="post_transport_metro">
+                  <option value="">-- selecione --</option>
+                  <option>Automovel</option>
+                  <option>Motocicleta</option>
+                  <option>Ônibus Municipal</option>
+                  <option>Ônibus Intermunicipal</option>
+                  <option>Balsa</option>
+                  <option>Bicicleta</option>
+                  <option>Caminhando</option>
+                </select>
+              </div>
+              <div class="row conditional" id="post_fuelMetroRow" style="display:none;">
+                <label for="post_fuel_metro">Combustível</label>
+                <select id="post_fuel_metro" name="post_fuel_metro">
+                  <option value="">-- selecione --</option>
+                  <option>Gasolina Automotiva (comercial)</option>
+                  <option>Biometano</option>
+                  <option>Gás Natural Veicular (GNV)</option>
+                  <option>Etanol Hidratado</option>
+                  <option>Óleo Diesel (comercial)</option>
+                  <option>Elétrico</option>
+                </select>
+              </div>
+              <div class="row conditional" id="post_yearMetroRow" style="display:none;">
+                <label for="post_year_metro">Ano</label>
+                <input id="post_year_metro" name="post_year_metro" type="number" min="1900" max="2100" placeholder="Ex: 2018" />
+              </div>
+              <div class="row">
+                <label for="post_distance_metro">Km</label>
+                <input id="post_distance_metro" name="post_distance_metro" type="number" min="0" step="0.1" placeholder="Ex: 12.5" />
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
 
         <div class="row conditional" id="vehicleSubtypeRow" style="display:none;">

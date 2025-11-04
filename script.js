@@ -1,3 +1,20 @@
+function normalizeTransportRaw(s){
+  if (!s && s !== '') return '';
+  try {
+    // normalize diacritics, remove combining marks, convert NBSP to space, collapse whitespace
+    let t = String(s || '');
+    if (typeof t.normalize === 'function') t = t.normalize('NFKD');
+    // remove combining diacritics
+    t = t.replace(/[\u0300-\u036f]/g, '');
+    // convert non-breaking spaces to regular spaces
+    t = t.replace(/\u00A0/g, ' ');
+    // remove control characters
+    t = t.replace(/[\x00-\x1F\x7F]/g, '');
+    // collapse whitespace
+    t = t.replace(/\s+/g, '');
+    return t.toLowerCase().trim();
+  } catch (e) { return String(s || '').toLowerCase().trim(); }
+}
 const form = document.getElementById('tripForm');
 const transport = document.getElementById('transport');
 const originRow = document.getElementById('originRow');
@@ -10,6 +27,7 @@ const yearRow = document.getElementById('yearRow');
 const balsaTypeRow = document.getElementById('balsaTypeRow');
 const balsaTypeEl = document.getElementById('balsaType');
 const airSection = document.getElementById('airSection');
+const trainSection = document.getElementById('trainSection');
 const hadConnections = document.getElementById('hadConnections');
 const connectionsRow = document.getElementById('connectionsRow');
 const connectionsEl = document.getElementById('connections');
@@ -29,7 +47,104 @@ const postFuelEl = document.getElementById('post_fuel');
 const postYearRow = document.getElementById('post_yearRow');
 const postYearEl = document.getElementById('post_year');
 const postDistanceEl = document.getElementById('post_distance');
+const usedAfterTrainEl = document.getElementById('usedAfterTrain');
+const postTrainSection = document.getElementById('postTrainSection');
+const postTransportTrainEl = document.getElementById('post_transport_train');
+const postFuelTrainRow = document.getElementById('post_fuelTrainRow');
+const postFuelTrainEl = document.getElementById('post_fuel_train');
+const postYearTrainRow = document.getElementById('post_yearTrainRow');
+const postYearTrainEl = document.getElementById('post_year_train');
+const postDistanceTrainEl = document.getElementById('post_distance_train');
+const metroSection = document.getElementById('metroSection');
+const usedAfterMetroEl = document.getElementById('usedAfterMetro');
+const postMetroSection = document.getElementById('postMetroSection');
+const postTransportMetroEl = document.getElementById('post_transport_metro');
+const postFuelMetroRow = document.getElementById('post_fuelMetroRow');
+const postFuelMetroEl = document.getElementById('post_fuel_metro');
+const postYearMetroRow = document.getElementById('post_yearMetroRow');
+const postYearMetroEl = document.getElementById('post_year_metro');
+const postDistanceMetroEl = document.getElementById('post_distance_metro');
 const entriesTableBody = document.querySelector('#entriesTable tbody');
+
+// cache for coords fetched from server
+const _coordsCache = {};
+
+function toRad(deg){ return deg * Math.PI / 180; }
+
+function haversineKm(lat1, lon1, lat2, lon2){
+  const R = 6371; // km
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
+
+async function getCoordsForIata(iata){
+  if (!iata) return null;
+  const key = String(iata).toUpperCase();
+  if (_coordsCache[key] !== undefined) return _coordsCache[key];
+  try {
+    const res = await fetch('/api/coords?iata=' + encodeURIComponent(key));
+    if (!res.ok) { _coordsCache[key] = null; return null; }
+    const j = await res.json();
+    // expected { lat: number, lon: number }
+    if (j && typeof j.lat === 'number' && typeof j.lon === 'number') {
+      _coordsCache[key] = { lat: j.lat, lon: j.lon };
+      return _coordsCache[key];
+    }
+  } catch (e){ console.debug('Erro ao buscar coords', e); }
+  _coordsCache[key] = null;
+  return null;
+}
+
+// compute distance for currently selected flight (including connections)
+async function computeTotalFlightDistance(){
+  if (!form || form.transport.value !== 'Aéreo') return;
+  // gather IATA codes in trip order
+  const codes = [];
+  try {
+    const dep = depAirportEl && depAirportEl.value ? JSON.parse(depAirportEl.value) : null;
+    const arr = arrAirportEl && arrAirportEl.value ? JSON.parse(arrAirportEl.value) : null;
+    if (dep && dep.airport) codes.push(String(dep.airport).toUpperCase());
+    if (hadConnections && hadConnections.checked && connectionsListEl){
+      const rows = Array.from(connectionsListEl.querySelectorAll('.connections-list-row'));
+      for (const r of rows){
+        const sel = r.querySelector('.conn-airport');
+        if (sel && sel.value){
+          try { const obj = JSON.parse(sel.value); if (obj && obj.airport) codes.push(String(obj.airport).toUpperCase()); } catch(e){}
+        }
+      }
+    }
+    if (arr && arr.airport) codes.push(String(arr.airport).toUpperCase());
+  } catch(e){ console.debug('Erro ao montar rota', e); }
+
+  if (codes.length < 2){
+    // nothing to compute
+    if (form.distance) form.distance.value = '';
+    return;
+  }
+
+  let total = 0;
+  for (let i=0;i<codes.length-1;i++){
+    const a = codes[i], b = codes[i+1];
+    const ca = await getCoordsForIata(a);
+    const cb = await getCoordsForIata(b);
+    if (!ca || !cb){
+      // if any leg missing coords, we can't compute full distance
+      console.debug('Coords faltando para', a, b);
+      if (form.distance) form.distance.value = '';
+      return;
+    }
+    const d = haversineKm(ca.lat, ca.lon, cb.lat, cb.lon);
+    total += d;
+  }
+  // format with 3 decimal places
+  if (form.distance) form.distance.value = total.toFixed(3).toString();
+}
+
 
 const STORAGE_KEY = 'trip_entries_v1';
 
@@ -46,9 +161,42 @@ transport.addEventListener('change', () => {
       if (v === 'Aéreo') airSection.style.display = '';
       else airSection.style.display = 'none';
     }
+    // mostrar seção de trem quando 'Trem' selecionado
+    if (trainSection) {
+      if (v === 'Trem') trainSection.style.display = '';
+      else trainSection.style.display = 'none';
+    }
+    // mostrar seção de metro quando 'Metro' selecionado
+    if (metroSection) {
+      if (v === 'Metro') metroSection.style.display = '';
+      else metroSection.style.display = 'none';
+    }
+    // when hiding train section, reset its controls
+    if (v !== 'Trem') {
+      try {
+        if (usedAfterTrainEl) usedAfterTrainEl.checked = false;
+        if (postTrainSection) postTrainSection.style.display = 'none';
+        if (postTransportTrainEl) postTransportTrainEl.value = '';
+        if (postFuelTrainEl) postFuelTrainEl.value = '';
+        if (postYearTrainEl) postYearTrainEl.value = '';
+        if (postDistanceTrainEl) postDistanceTrainEl.value = '';
+      } catch(e){}
+    }
+    // when hiding metro section, reset its controls
+    if (v !== 'Metro') {
+      try {
+        if (usedAfterMetroEl) usedAfterMetroEl.checked = false;
+        if (postMetroSection) postMetroSection.style.display = 'none';
+        if (postTransportMetroEl) postTransportMetroEl.value = '';
+        if (postFuelMetroEl) postFuelMetroEl.value = '';
+        if (postYearMetroEl) postYearMetroEl.value = '';
+        if (postDistanceMetroEl) postDistanceMetroEl.value = '';
+      } catch(e){}
+    }
 
-    // when transport is Aéreo, we don't require address/distance
+  // control visibility/requirements for special transport types
     if (v === 'Aéreo') {
+      // For flights we hide free-text origin/destination/distance (we use airport selectors)
       if (originRow) originRow.style.display = 'none';
       if (destinationRow) destinationRow.style.display = 'none';
       if (distanceRow) distanceRow.style.display = 'none';
@@ -56,7 +204,16 @@ transport.addEventListener('change', () => {
       const o = document.getElementById('origin'); if (o) o.removeAttribute('required');
       const d = document.getElementById('destination'); if (d) d.removeAttribute('required');
       const dist = document.getElementById('distance'); if (dist) dist.removeAttribute('required');
+    } else if (v === 'Trem' || v === 'Metro') {
+      // For train: hide origin/destination (not needed), but keep distance visible and required
+      if (originRow) originRow.style.display = 'none';
+      if (destinationRow) destinationRow.style.display = 'none';
+      if (distanceRow) distanceRow.style.display = '';
+      const o = document.getElementById('origin'); if (o) o.removeAttribute('required');
+      const d = document.getElementById('destination'); if (d) d.removeAttribute('required');
+      const dist = document.getElementById('distance'); if (dist) dist.setAttribute('required','');
     } else {
+      // default: show origin/destination/distance and make them required
       if (originRow) originRow.style.display = '';
       if (destinationRow) destinationRow.style.display = '';
       if (distanceRow) distanceRow.style.display = '';
@@ -92,7 +249,7 @@ function populateVehicleSubtype(transportValue){
   // limpar
   vehicleSubtypeEl.innerHTML = '<option value="">-- selecione --</option>';
   if (transportValue === 'Automovel'){
-    const opts = ['Flex','Híbrido','Híbrido plug-in','Não se aplica'];
+    const opts = ['Motor flex','Motor híbrido','Motor híbrido plug-in','Não se aplica'];
     opts.forEach(o => {
       const opt = document.createElement('option'); opt.textContent = o; vehicleSubtypeEl.appendChild(opt);
     });
@@ -134,6 +291,7 @@ if (hadConnections) {
       if (connectionsCountEl) connectionsCountEl.value = '';
       if (connectionsListEl) connectionsListEl.innerHTML = '';
     }
+    computeTotalFlightDistance().catch(()=>{});
   });
 }
 
@@ -165,6 +323,8 @@ if (connectionsCountEl) {
   // attach cascading behavior
   attachCascadeToConnection(cCountry, cCity, cAirport);
       }
+      // after creating connection selects, attempt to compute distance
+      computeTotalFlightDistance().catch(()=>{});
     }
   });
 }
@@ -244,10 +404,59 @@ attachCascade(depCountryEl, depCityEl, depAirportEl);
 attachCascade(arrCountryEl, arrCityEl, arrAirportEl);
 initAirportSelectors();
 
+// recompute distance when main airport selects change
+if (depAirportEl) depAirportEl.addEventListener('change', () => { computeTotalFlightDistance().catch(()=>{}); });
+if (arrAirportEl) arrAirportEl.addEventListener('change', () => { computeTotalFlightDistance().catch(()=>{}); });
+
+// delegate connection airport changes
+if (connectionsListEl) {
+  connectionsListEl.addEventListener('change', (ev) => {
+    if (ev.target && ev.target.matches && ev.target.matches('.conn-airport')){
+      computeTotalFlightDistance().catch(()=>{});
+    }
+  });
+}
+
 // transporte pós-voo: mostrar seção quando marcado
 if (usedAfterFlightEl) {
   usedAfterFlightEl.addEventListener('change', () => {
     if (postFlightSection) postFlightSection.style.display = usedAfterFlightEl.checked ? '' : 'none';
+  });
+}
+
+// transporte pós-trem: mostrar seção quando marcado
+if (usedAfterTrainEl) {
+  usedAfterTrainEl.addEventListener('change', () => {
+    if (postTrainSection) postTrainSection.style.display = usedAfterTrainEl.checked ? '' : 'none';
+  });
+}
+
+// transporte pós-metro: mostrar seção quando marcado
+if (usedAfterMetroEl) {
+  usedAfterMetroEl.addEventListener('change', () => {
+    if (postMetroSection) postMetroSection.style.display = usedAfterMetroEl.checked ? '' : 'none';
+  });
+}
+
+// mostrar fuel/ year para o transporte pós-trem conforme seleção
+if (postTransportTrainEl) {
+  postTransportTrainEl.addEventListener('change', () => {
+    const v = postTransportTrainEl.value;
+    if (postFuelTrainRow) postFuelTrainRow.style.display = shouldShowFuel(v) ? '' : 'none';
+    if (postYearTrainRow) postYearTrainRow.style.display = shouldShowFuel(v) ? '' : 'none';
+    if (postFuelTrainEl && !shouldShowFuel(v)) postFuelTrainEl.value = '';
+    if (postYearTrainEl && !shouldShowFuel(v)) postYearTrainEl.value = '';
+  });
+}
+
+// mostrar fuel/ year para o transporte pós-metro conforme seleção
+if (postTransportMetroEl) {
+  postTransportMetroEl.addEventListener('change', () => {
+    const v = postTransportMetroEl.value;
+    if (postFuelMetroRow) postFuelMetroRow.style.display = shouldShowFuel(v) ? '' : 'none';
+    if (postYearMetroRow) postYearMetroRow.style.display = shouldShowFuel(v) ? '' : 'none';
+    if (postFuelMetroEl && !shouldShowFuel(v)) postFuelMetroEl.value = '';
+    if (postYearMetroEl && !shouldShowFuel(v)) postYearMetroEl.value = '';
   });
 }
 
@@ -281,7 +490,13 @@ async function saveEntry(entry) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(entry)
     });
-    if (!res.ok) return null;
+    if (!res.ok) {
+      let txt = '';
+      try { txt = await res.text(); } catch(e){}
+      console.error('Erro ao salvar no servidor:', res.status, txt);
+      alert('Erro ao salvar no servidor: ' + res.status + '\n' + txt);
+      return null;
+    }
     return await res.json();
   } catch (e) {
     console.error('Erro ao salvar no servidor', e);
@@ -299,8 +514,9 @@ async function renderTable() {
   const flightDepFull = e.flight && e.flight.departureAirport ? String(e.flight.departureAirport) : '';
   const flightArrFull = e.flight && e.flight.arrivalAirport ? String(e.flight.arrivalAirport) : '';
   const flightConFull = e.flight && e.flight.connections ? String(e.flight.connections) : '';
-  const postTransport = e.postFlight && e.postFlight.transport ? String(e.postFlight.transport) : '';
-  const postDistance = e.postFlight && (e.postFlight.distance !== undefined) ? String(e.postFlight.distance) : '';
+  // support postFlight or postTrain
+  const postTransport = e.postFlight && e.postFlight.transport ? String(e.postFlight.transport) : (e.postTrain && e.postTrain.transport ? String(e.postTrain.transport) : (e.postMetro && e.postMetro.transport ? String(e.postMetro.transport) : ''));
+  const postDistance = (e.postFlight && (e.postFlight.distance !== undefined) ? String(e.postFlight.distance) : (e.postTrain && (e.postTrain.distance !== undefined) ? String(e.postTrain.distance) : (e.postMetro && (e.postMetro.distance !== undefined) ? String(e.postMetro.distance) : '')));
   const truncate = (s, n=40) => s && s.length > n ? s.slice(0,n-1) + '…' : s;
   const flightDep = escapeHtml(truncate(flightDepFull,40));
   const flightArr = escapeHtml(truncate(flightArrFull,40));
@@ -388,6 +604,45 @@ form.addEventListener('submit', async (ev) => {
     }
   }
 
+  // se transporte for trem, permitir pós-transporte similar ao aéreo
+  if (data.transport === 'Trem') {
+    if (usedAfterTrainEl && usedAfterTrainEl.checked) {
+      data.postTrain = {
+        transport: postTransportTrainEl ? postTransportTrainEl.value : '',
+        fuel: postFuelTrainEl ? postFuelTrainEl.value : '',
+        year: postYearTrainEl ? postYearTrainEl.value : '',
+        distance: postDistanceTrainEl ? postDistanceTrainEl.value : ''
+      };
+    }
+  }
+  // se transporte for metro, permitir pós-transporte similar ao trem
+  if (data.transport === 'Metro') {
+    if (usedAfterMetroEl && usedAfterMetroEl.checked) {
+      data.postMetro = {
+        transport: postTransportMetroEl ? postTransportMetroEl.value : '',
+        fuel: postFuelMetroEl ? postFuelMetroEl.value : '',
+        year: postYearMetroEl ? postYearMetroEl.value : '',
+        distance: postDistanceMetroEl ? postDistanceMetroEl.value : ''
+      };
+    }
+  }
+
+  // Fallback: se transporte for Trem/Metro e distância principal estiver vazia,
+  // tentar preencher a partir do campo de pós-transporte (postTrain/postMetro/postFlight).
+  // Isso corrige casos em que o usuário preencheu apenas o Km no bloco pós-transporte.
+  try {
+    const rawTransport = (data.transport || '').toString();
+    const hasNormalize = typeof rawTransport.normalize === 'function';
+    const tnorm = hasNormalize ? rawTransport.normalize('NFKD').replace(/[ -\u036f]/g, '').replace(/\s+/g,'').toLowerCase() : rawTransport.toLowerCase();
+    if ((tnorm === 'trem' || tnorm === 'metro') && (!data.distance || data.distance === '')) {
+      data.distance = (data.postTrain && data.postTrain.distance) || (data.postMetro && data.postMetro.distance) || (data.postFlight && data.postFlight.distance) || '';
+      // trim string if any
+      if (data.distance && typeof data.distance === 'string') data.distance = data.distance.trim();
+    }
+  } catch (e) {
+    // ignore fallback errors
+  }
+
   // marcação especial: Tipo da frota de Veiculos
   data.tipo_frota_de_veiculos = '';
   if (data.transport === 'Automovel' && data.vehicleSubtype === 'Flex'){
@@ -422,9 +677,36 @@ form.addEventListener('submit', async (ev) => {
     if (!data.tipo_frota_de_veiculos) data.tipo_frota_de_veiculos = 'Balsa';
   }
 
-  if (data.transport !== 'Aéreo' && (!data.origin || !data.destination || data.distance === '')) {
-    alert('Preencha origem, destino e distância.');
-    return;
+  // validation: different rules for Aéreo, Trem/Metro, and others
+  try {
+    const rawTransport = (data.transport || '').toString();
+    const tnorm = normalizeTransportRaw(rawTransport);
+    // flight: no free-text origin/destination/distance required
+    if (tnorm === 'aereo' || rawTransport === 'Aéreo') {
+      // ok
+    } else if (tnorm === 'trem' || tnorm === 'metro') {
+      if (data.distance === '') {
+        // give more debugging info to help trace what the client is about to send
+        console.error('Validação falhou: Trem/Metro sem distância', { transport: rawTransport, transport_norm: tnorm, distance: data.distance, postTrain: data.postTrain, postMetro: data.postMetro });
+        alert(`Preencha a distância. (debug: transport='${rawTransport}', transport_norm='${tnorm}', distance='${data.distance}')`);
+        return;
+      }
+    } else {
+      if (!data.origin || !data.destination || data.distance === '') {
+        console.error('Validação falhou: campos obrigatórios ausentes', { transport: rawTransport, transport_norm: tnorm, origin: data.origin, destination: data.destination, distance: data.distance });
+        alert(`Preencha origem, destino e distância. (debug: transport='${rawTransport}', transport_norm='${tnorm}', origin='${data.origin}', destination='${data.destination}', distance='${data.distance}')`);
+        return;
+      }
+    }
+  } catch (err) {
+    // fallback to previous strict checks
+    if (data.transport === 'Aéreo') {
+      // ok
+    } else if (data.transport === 'Trem' || data.transport === 'Metro') {
+      if (data.distance === '') { alert('Preencha a distância.'); return; }
+    } else {
+      if (!data.origin || !data.destination || data.distance === '') { alert('Preencha origem, destino e distância.'); return; }
+    }
   }
 
   if (shouldShowFuel(data.transport) && !data.fuel) {
@@ -438,6 +720,14 @@ form.addEventListener('submit', async (ev) => {
     alert('Por favor selecione o Subtipo do veículo.');
     return;
   }
+
+  // debug: log payload to browser console so we can inspect what is being sent
+  // normalize key fields as a last-resort guard (helps if DOM values changed)
+  try {
+    data.transport = (data.transport || (document.getElementById('transport') && document.getElementById('transport').value) || '').trim();
+    data.distance = (data.distance || (document.getElementById('distance') && document.getElementById('distance').value) || '').toString().trim();
+  } catch(e){}
+  try { console.debug('Submitting entry to /api/entries', data); console.debug('Submitting JSON body:', JSON.stringify(data)); } catch(e){}
 
   const saved = await saveEntry(data);
   if (!saved) { alert('Erro ao salvar no servidor'); return; }
@@ -479,10 +769,12 @@ document.getElementById('exportCsv').addEventListener('click', async () => {
   // include flight-related fields if any entry has flight/postFlight
   const hasFlight = entries.some(e => e.flight);
   const hasPostFlight = entries.some(e => e.postFlight);
+  const hasPostTrain = entries.some(e => e.postTrain);
+  const hasPostMetro = entries.some(e => e.postMetro);
   if (hasFlight) {
     headers.push('flight_departure','flight_arrival','flight_connections');
   }
-  if (hasPostFlight) {
+  if (hasPostFlight || hasPostTrain || hasPostMetro) {
     headers.push('post_transport','post_distance');
   }
 
@@ -499,8 +791,8 @@ document.getElementById('exportCsv').addEventListener('click', async () => {
       if (h === 'flight_departure') r.push(csvSafe(e.flight ? (e.flight.departureAirport||'') : ''));
       else if (h === 'flight_arrival') r.push(csvSafe(e.flight ? (e.flight.arrivalAirport||'') : ''));
       else if (h === 'flight_connections') r.push(csvSafe(e.flight ? (e.flight.connections||'') : ''));
-      else if (h === 'post_transport') r.push(csvSafe(e.postFlight ? (e.postFlight.transport||'') : ''));
-      else if (h === 'post_distance') r.push(csvSafe(e.postFlight ? (e.postFlight.distance||'') : ''));
+  else if (h === 'post_transport') r.push(csvSafe(e.postFlight ? (e.postFlight.transport||'') : (e.postTrain ? (e.postTrain.transport||'') : (e.postMetro ? (e.postMetro.transport||'') : ''))));
+  else if (h === 'post_distance') r.push(csvSafe(e.postFlight ? (e.postFlight.distance||'') : (e.postTrain ? (e.postTrain.distance||'') : (e.postMetro ? (e.postMetro.distance||'') : ''))));
       else r.push(csvSafe(e[h] ?? ''));
     }
     return r.join(sep);
