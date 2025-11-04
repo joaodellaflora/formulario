@@ -1,3 +1,46 @@
+# Automatização de emissão
+
+Pequena aplicação Flask para cadastro de entradas relacionadas a deslocamentos e consulta de aeroportos.
+
+Como rodar (Windows / PowerShell)
+
+1. Crie um virtualenv usando seu Python 3.12 (exemplo):
+
+```powershell
+$PY = 'C:\\Users\\joaog\\AppData\\Local\\Programs\\Python\\Python312\\python.exe'
+$PY -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+2. Inicie a aplicação (background):
+
+```powershell
+& '.\run_app.ps1'
+# Ou em foreground para ver logs no terminal:
+& '.\run_app.ps1' -Foreground
+```
+
+3. Acesse no navegador:
+
+```
+http://127.0.0.1:5000/
+```
+
+Arquivos importantes
+- `app.py` - aplicação Flask
+- `run_app.ps1` - script PowerShell para iniciar a aplicação (usa `.venv` se existir)
+- `requirements.txt` - dependências Python
+
+Logs
+- `logs/server_out.log` e `logs/server_err.log`
+
+Contribuição rápida
+
+- Evite commitar ambientes virtuais (`.venv` já está no `.gitignore`).
+- Antes de abrir PR, rode os testes (se houver) e garanta que a aplicação inicia localmente.
+
+Contato
+- João Della Flora <joaogabrielcasarotto@gmail.com>
 # Formulário de Deslocamento
 
 Página simples para coletar dados de deslocamento: origem, destino, distância (km), meio de transporte, tipo de combustível (quando aplicável), subtipo do veículo (quando aplicável) e ano do veículo.
